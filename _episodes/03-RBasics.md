@@ -1,7 +1,7 @@
 ---
 title: "R Basics"
-teaching: 20
-exercises: 10
+teaching: 15
+exercises: 30
 questions:
 - "How do I write code in the R programming language?"
 - "What packages are available to me for biological data analysis in R?"
