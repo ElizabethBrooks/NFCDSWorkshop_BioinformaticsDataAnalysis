@@ -1,5 +1,5 @@
 ---
-title: "Programming Conventions"
+title: "Programming Language Conventions"
 teaching: 20
 exercises: 10
 questions:
@@ -11,11 +11,9 @@ keypoints:
 - "Always include informative documents for your programs."
 ---
 
-## R Programming Language Conventions 
+## Programming Language Conventions 
 
-There are
-
-
+There is a set of guildlines for every programming language that informs how code should be formatted and the meaning behind specific combinations of words and symbols.
 
 > ## Discussion
 >

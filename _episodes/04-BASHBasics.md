@@ -12,7 +12,7 @@ keypoints:
 - "TBD"
 ---
 
-## Logic & Control Statements in R
+## Extending Logic & Control Statements to BASH
 
 Recall that we can combine boolean expressions with control statements to specify how programs will complete a task. Control statments allow you to have flexible outcomes by selecting which pieces of codes are executed, or not. 
 

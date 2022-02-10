@@ -21,12 +21,22 @@ keypoints:
 
 ## The R Programming Language
 
-The [R programming language][rLang] is a great first language for anyone interested in using coding to help answer questions with data analysis, data visualization, and data science. R provides a wide variety of tools for statistical and graphical techniques, including; linear and nonlinear modelling, classical statistical tests, time-series analysis, classification, clustering, and more. A strengths of the R language is the ease with which publication-quality plots can be generated, even including mathematical symbols and formulae.
+The R programming language is a great first language for anyone interested in using coding to help answer questions with data analysis, data visualization, and data science. R provides a wide variety of tools for statistical and graphical techniques, including; linear and nonlinear modelling, classical statistical tests, time-series analysis, classification, clustering, and more. A strength of the R language is the ease with which publication-quality plots can be generated, including mathematical symbols and formulae.
 
 ![Why Learn the R Programming Language](../fig/Why-Learn-R-Reasons-to-learn-R.jpeg){: width="500" }
 *[Image source][rMotivation]*
 
-Since the R programming language is [open source][openSource] it is not proprietary, and it can be modified and built upon by the public.
+Since the R programming language is [open source][openSource] it is not proprietary, and it can be modified and built upon by the public. Furthermore, [R][rLang] environment itself is an integrated suite of software for data manipulation, calculation, and graphics. The flexible R environment includes:
+
+- effective data handling and storage facility
+- operators for calculations on arrays, and matrices in particular
+- collections of intermediate tools for data analysis
+- graphical facilities for data analysis and display
+- well-developed, simple and effective programming language that includes:
+  - conditionals
+  - loops
+  - user-defined recursive functions
+  - input and output capabilities
 
 ### The Utility and Components of RStudio
 
@@ -146,7 +156,9 @@ print(my_var)
 ~~~
 {: .language-r}
 
-Vector, matrices, and data frames are slightly called R objects. Objects are a concept fundamental to [object oriented programming][OOP], and each obejct has specific attributes and behaviors. In the R programming language these are named storage that contains 1D and 2D collections of variables of the same data type. Each piece of data in a vector can be accessed by specifying the index of the piece of data, or element. Furthermore, vectors can be assigned to variables in R.
+Vector, matrices, and data frames are slightly called R objects. Objects are a concept fundamental to [object oriented programming][OOP], and each obejct has specific attributes and behaviors. In the R programming language these are named storage that contains 1D and 2D collections of data. 
+
+Each piece of data in a vector can be accessed by specifying the index of the piece of data, or element. The data in vectors must all be of the same data type. Furthermore, vectors can be assigned to variables in R.
 
 To create 1D vector storages we can use built in R functions. For example, we can create a vector of numbers representing the sequence of values as follows.
 
@@ -208,6 +220,17 @@ my_vector[2]
 > {: .solution}
 {: .challenge}
 
+We can also create a 1D list using the **list** function in R. These are R objects that can contain data elements of different types. What's more, the data in lists can be variables, 1D, and 2D R objects.
+
+~~~
+# list of values with different data types
+my_list <- list(1:4, TRUE, 0.5, "meow")
+
+# view the contents of the list variable
+print(my_list)
+~~~
+{: .language-r}
+
 Next, we can use different R functions to create a 2D data frame and a 2D matrix that each contain multiple sets of sequences. Matrices are objects in which the elements are arranged in a 2D rectangular layout, and data frames are 2D tables in which each column contains values of one variable and each row contains one set of values from each column. Additionally, we can access different pieces of data (elements) stored in our matrix by using the column and row index of the element.
 
 ~~~
@@ -268,11 +291,11 @@ seq_var <- seq(1, 4)
 # examine the documentation for the data.frame function in R
 ?data.frame
 
-# 2D data frame storing our three 1D vectors using explicit column naming
-data.frame(characters = char_var, integers = seq_var)
-
 # variable with a 2D data frame storing our three 1D vectors using implicit column naming
 df <- data.frame(char_Var, seq_var, logic_Var)
+
+# 2D data frame storing our three 1D vectors using explicit column naming
+data.frame(characters = char_var, integers = seq_var)
 ~~~
 {: .language-r}
 
@@ -307,6 +330,12 @@ my_DF <- data.frame(
 
 # retrieve the first half of myDF
 my_DF[1:2, 1:2]
+
+# retrieve the second column using indexing
+my_DF[,2]
+
+# retrieve the second column using the $ operator and column name
+my_DF$ints
 ~~~
 {: .language-r}
 
@@ -315,7 +344,7 @@ my_DF[1:2, 1:2]
 > If a line of code becomes too long and shifts (wraps around) to the next line, it is a good idea to break it into appropriate code pieces on separate lines. For example, in the previous **my_DF** function call we wrote each argument on a separate line.
 {: .callout}
 
-> ## Callenge
+> ## Coding Challenge
 > 
 > How are the values for in the sequence of decimals in the following **seq** function call calculated?
 > ~~~
@@ -332,8 +361,8 @@ my_DF[1:2, 1:2]
 >>    length.out = NULL, along.with = NULL, ...)
 >> ~~~
 >> {: .language-r}
-> {:. solution}
-{: .discussion}
+> {: .solution}
+{: .challenge}
 
 A powerful benefit of coding is the ability to create our own function definitions in R. This allows us to re-use a set of code statements arranged to perform a specific task. In R a function is created (defined) by using the keyword **function**. The basic syntax of an R function definition is as follows:
 
@@ -365,7 +394,7 @@ function_name <- function(arg_1, arg_2, ...) {
 > - **return value** − the last expression evaluated in the function body
 {: .checklist}
 
-Let's practice making our own *user defined* functions using **function**, which is a *built in* R function. As a first step, we will make a couple functions with out arguments.
+Let's practice making our own *user-defined* functions using **function**, which is a *built-in* R function. As a first step, we will make a couple functions with out arguments.
 
 ~~~
 # definition of a function named my_function,
@@ -501,6 +530,8 @@ my_function <- function(first_arg, second_arg) {
 my_function(2, "4")
 ~~~
 {: .language-r}
+
+So, it is important to take error meesages with a grain of salt. Instead of worrying or feeling overwhelemed when you recieve a bunch of incoherent error messages, tackle the problems one at a time and step-by-step. 
 
 > ## Coding Challenge
 >
