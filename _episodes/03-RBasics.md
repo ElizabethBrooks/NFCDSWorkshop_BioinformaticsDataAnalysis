@@ -28,11 +28,11 @@ The [R programming language][rLang] is a great first language for anyone interes
 
 Since the R programming language is [open source][openSource] it is not proprietary, and it can be modified and built upon by the public.
 
-### The Utility and Componenets of RStudio
+### The Utility and Components of RStudio
 
 RStudio is a very useful software program that allows you to work with the R programming language using a convienient user interface (UI). The interface for RStudio has four main components: source, console, environment/history, files/plots/packages/help.
 
-![Componenets of the RStudio User Interface](../fig/r-studio.png){: width="500" }
+![Components of the RStudio User Interface](../fig/r-studio.png){: width="500" }
 *[Image source][componentsRStudio]*
 
 The most important component of RStudio is the **console**, which is essentially the heart of RStudio. It is from here that you can run code, and it is here that R actually evaluates code.
@@ -88,10 +88,10 @@ my_result <- my_value_1 + my_value_2
 
 The type of data that is being stored and referred to by variables often needs to be specified. One reason for this is because some mathematical or computational operations cannot be performed on different data types.
 
-![R Variable and Data Types](../fig/Rvariablesdata.png){: width="500" }
+![R Variable and Data Types](../fig/Rvariablesdata.jpeg){: width="500" }
 *[Image source][rVarsTypes]*
 
-> ## Challenge
+> ## Coding Challenge
 >
 > What are some more code examples of variables that have different data types?
 > 
@@ -110,6 +110,7 @@ The type of data that is being stored and referred to by variables often needs t
 >> # variable with a value assigned from the data in the my_file.txt text file
 >> my_file_data <- read.delim("my_file.txt")
 >> ~~~ 
+>> {: .language-r}
 > {: .solution}
 {: .challenge}
 
@@ -118,7 +119,7 @@ The type of data that is being stored and referred to by variables often needs t
 Functions in R are used to  The syntax of a function in R defines a block of code (statements) that can be used repeatedly and on demand (call) in a program.
 
 ![Functions Syntax in R](../fig/r-function-syntax.png){: width="500" }
-*[Image source][rSyntax]*
+*[Image source][rFuncSyntax]*
 
 Perhaps the most fundamental function in any programming language is one that allows you to print data to the screen. This allows you to view the values assigned to variables and identify the source of problems in you code, for example.
 
@@ -130,6 +131,7 @@ Perhaps the most fundamental function in any programming language is one that al
 > # examine the documentation for the print function in R
 > ?print
 > ~~~
+> {: .language-r}
 {: .callout}
 
 The most common function to print outputs in R is named **print**. This function requires as input a R object, such as a character string or variable.
@@ -186,10 +188,11 @@ my_vector[2]
 > Note that we were able to use (call) a **print** function using a **seq** function contained (nested) inside the arguments of the **print** function. Nested function calls allow you to perform multiple tasks using fewer lines of code, for example.
 {: .callout}
 
-> ## Challenge
+> ## Coding Challenge
 > 
 > How would you print both a character object and a variable to the screen?
-> **Tip:** Use the internet to search "r print string and variable", for example.
+>
+> **Hint:** Use the internet to search "r print string and variable", for example.
 >
 >> ## Solution
 >> 
@@ -236,7 +239,7 @@ my_mat[1,2]
 ~~~
 {: .language-r}
 
-> ## Challenge
+> ## Coding Challenge
 >
 > How would you access a specific element of a matrix that is not stored in memory using a variable?
 >
@@ -320,15 +323,16 @@ my_DF[1:2, 1:2]
 > ~~~
 > {: .language-r}
 > 
-> ## Solution
->
-> From looking at the documentation for seq using the **?** operator:
-> ~~~
-> ## Default S3 method:
-> seq(from = 1, to = 1, by = ((to - from)/(length.out - 1)),
->    length.out = NULL, along.with = NULL, ...)
-> ~~~
-> {: .language-r}
+>> ## Solution
+>>
+>> From looking at the documentation for seq using the **?** operator:
+>> ~~~
+>> ## Default S3 method:
+>> seq(from = 1, to = 1, by = ((to - from)/(length.out - 1)),
+>>    length.out = NULL, along.with = NULL, ...)
+>> ~~~
+>> {: .language-r}
+> {:. solution}
 {: .discussion}
 
 A powerful benefit of coding is the ability to create our own function definitions in R. This allows us to re-use a set of code statements arranged to perform a specific task. In R a function is created (defined) by using the keyword **function**. The basic syntax of an R function definition is as follows:
@@ -340,7 +344,7 @@ function_name <- function(arg_1, arg_2, ...) {
 ~~~
 {: .language-r}
 
-> ## Challenge
+> ## Coding Challenge
 >
 > How can you view the documentation for the **function** R function in RStudio?
 >
@@ -361,7 +365,7 @@ function_name <- function(arg_1, arg_2, ...) {
 > - **return value** − the last expression evaluated in the function body
 {: .checklist}
 
-Let's practice making our own **user defined** functions using **function**, which is a **built in** R function. As a first step, we will make a couple functions with out arguments.
+Let's practice making our own *user defined* functions using **function**, which is a *built in* R function. As a first step, we will make a couple functions with out arguments.
 
 ~~~
 # definition of a function named my_function,
@@ -427,7 +431,7 @@ my_default_addition_function(2, 4)
 ~~~
 {: .language-r}
 
-> ## Challenge
+> ## Coding Challenge
 > 
 > Now write and run your own function! Try using some of the other functions we have learned about so far in the body of the function you create. Remember that the last line of the function body is what gets returned when the function is called (run).
 {: .challenge}
@@ -479,7 +483,7 @@ Error in first_val + second_val : non-numeric argument to binary operator
 ~~~
 {: .error}
 
-But from this message we cannot tell exactly which argument has the problem **non-numeric** value. Let's use the **print** function to find the exact source of the error.
+But from this message we cannot tell exactly which argument has the problem *non-numeric* value. Let's use the **print** function to find the exact source of the error.
 
 ~~~
 # definition of a funtion to add incompatible data type
@@ -498,10 +502,11 @@ my_function(2, "4")
 ~~~
 {: .language-r}
 
-> ## Challenge
+> ## Coding Challenge
 >
 > What is another function we can use to find the exact source of the error?
-> **Tip:** Use the internet to search "r view data type", for example.
+>
+> **Hint:** Use the internet to search "r view data type", for example.
 >
 >> ## Solution
 >>
@@ -543,17 +548,17 @@ The three primary types of [control statements][controlStructures] are:
 
 The most common control structure of [sequential statements][seqStatements] are lines of code written one after another, and executed line by line.
 
-> ## Challenge - Sequential Statements
+> ## Coding Challenge - Sequential Statements
 >
 > What is output to the console after running the following sequential statments?
 >
 > **Pseudocode**
-> 1. Assign x the value of 6
+> 1. Assign x the character value of "hello" 
 > 2. Print the value of x
 > 
 > **R Code**
 > ~~~
-> x <- 6
+> x <- "hello"
 > print(x)
 > ~~~
 > {: .language-r}
@@ -562,7 +567,7 @@ The most common control structure of [sequential statements][seqStatements] are 
 >>
 >> The output of the sequential statements:
 >> ~~~
->> 6
+>> [1] "hello"
 >> ~~~
 >> {: .output}
 > {: .solution}
@@ -570,18 +575,18 @@ The most common control structure of [sequential statements][seqStatements] are 
 
 Iterative statements allow you to execute the same piece of code a specified number of times, or until a condition is reached. The most common [iterative statements][loopStatements] are defined using either FOR or WHILE loops.
 
-> ## Challenge - Iterative Statements 1
+> ## Coding Challenge - Iterative Statements Part 1
 >
 > What does the following FOR loop output?
 >
 > **Pseudocode**
-> 1. For each value in the sequence 1, 2, 3, 4, 5 
+> 1. For each value in the sequence a, b, c, d 
 > - Assign x the current value
 > - print the value of x
 >
 > **R Code**
 > ~~~
-> for (x in 1:5) {
+> for (x in letters[1:4]) {
 >   print(x)
 > }
 > ~~~
@@ -591,11 +596,10 @@ Iterative statements allow you to execute the same piece of code a specified num
 >>
 >> The FOR loop outputs the current value of x at each iteration:
 >> ~~~
->> 1
->> 2
->> 3
->> 4
->> 5
+>> [1] "a"
+>> [1] "b"
+>> [1] "c"
+>> [1] "d"
 >> ~~~
 >> {: .output}
 > {: .solution}
@@ -603,22 +607,22 @@ Iterative statements allow you to execute the same piece of code a specified num
 
 WHILE loops are another type of iterative statement that can be used as a control structure in your code. This type of iterative statement will continue to execute a piece of code until a condition is reached.
 
-> ## Challenge - Iterative Statements 2
+> ## Coding Challenge - Iterative Statements Part 2
 >
 > What does the following WHILE loop output?
 >
 > **Pseudocode**
-> 1. Assign x the value of 1
-> 2. While x is less than 3 
+> 1. Assign x the value of 3
+> 2. While x is greater than 0 
 > - print the value of x
 > - increment the value of x by 1
 >
 > **R Code**
 > ~~~
-> x <- 1
-> while (x < 3) {
+> x <- 3
+> while (x > 0) {
 >   print(x)
->   x <- i + 1
+>   x <- x - 1
 > }
 > ~~~
 > {: .language-r}
@@ -627,9 +631,9 @@ WHILE loops are another type of iterative statement that can be used as a contro
 >>
 >> The WHILE loop outputs the current value of x at each iteration:
 >> ~~~
->> 1
->> 2
->> 3
+>> [1] 3
+>> [1] 2
+>> [1] 1
 >> ~~~
 >> {: .output}
 > {: .solution}
@@ -639,18 +643,18 @@ The most common [conditional statements][conditionalStatements] are defined usin
 
 The most simple form of conditional statement is the IF... THEN form.
 
-> ## Challenge - Conditional Statements 1
+> ## Coding Challenge - Conditional Statements Part 1
 >
 > What does the following IF... THEN conditional statement output?
 >
 > **Pseudocode**
-> 1. Assign x the value of 7
-> 2. If x is greater than 6, then print the value of x
+> 1. Assign x the value of "a"
+> 2. If x is equal to "a", then print the value of x
 >
 > **R Code**
 > ~~~
-> x <- 7
-> if (x > 6) {
+> x <- "a"
+> if (x == "a") {
 >   print(x)
 > }
 > ~~~
@@ -658,9 +662,9 @@ The most simple form of conditional statement is the IF... THEN form.
 >
 >> ## Solution
 >>
->> The IF... THEN statement outputs the value of x if it is greater than 6:
+>> The IF... THEN statement outputs the value of x if the operator **==** returns (evaluates) to TRUE:
 >> ~~~
->> 7
+>> [1] "a"
 >> ~~~
 >> {: .output}
 > {: .solution}
@@ -668,22 +672,22 @@ The most simple form of conditional statement is the IF... THEN form.
 
 The next type of conditional statement adds a level of complexity with the IF... THEN... ELSE format.
 
-> ## Challenge - Conditional Statements 2
+> ## Coding Challenge - Conditional Statements Part 2
 >
 > What does the following IF... THEN... ELSE conditional statement output?
 >
 > **Pseudocode**
-> 1. Assign x the value of 7
-> 2. If x is less than 6, then print the value of x
-> 3. Else print "x is greater than or equal to 6"
+> 1. Assign x the value of "b"
+> 2. If x is equal to "a", then print the value of x
+> 3. Else print "x is not equal to the character 'a'"
 >
 > **R Code**
 > ~~~
-> x <- 7
-> if (x < 6) {
+> x <- "b"
+> if (x == "a") {
 >   print(x)
 > } else {
-> 	print("x is greater than or equal to 6")
+> 	print("x is not equal to the character 'a'")
 > }
 > ~~~
 > {: .language-r}
@@ -692,7 +696,7 @@ The next type of conditional statement adds a level of complexity with the IF...
 >>
 >> The IF... THEN... ELSE statement outputs the value of x if it is less than 6, else it prints a message:
 >> ~~~
->> x is greater than or equal to 6
+>> "x is not equal to the character 'a'"
 >> ~~~
 >> {: .output}
 > {: .solution}
@@ -700,25 +704,25 @@ The next type of conditional statement adds a level of complexity with the IF...
 
 A more advanced type of conditional statement combines multiple IF... THEN... ELSE statements to make a compound statememnt with many alternative outcomes.
 
-> ## Challenge - Conditional Statements 3
+> ## Coding Challenge - Conditional Statements Part 3
 >
 > What does the following compound IF... THEN... ELSE conditional statement output?
 >
 > **Pseudocode**
-> 1. Assign x the value of 7
-> 2. If x is equal to 6, then print "x is equal to 6"
-> 3. Else if x is greater than 6, then print "x is greater than 6"
-> 4. Else if x is less than 6, then print "x is less than 6"
+> 1. Assign x the value of "c"
+> 2. If x is equal to "a", then print "x is equal to 'a'"
+> 3. Else if x is not equal to "c", then print "x is not equal to 'a' or 'c'"
+> 4. Else if x is equal to "c", then print "x is equal to 'c'"
 >
 > **R Code**
 > ~~~
-> x <- 7
-> if (x = 6) {
->   print("x is equal to 6")
-> } else if (x > 6) {
-> 	print("x is greater than 6")
-> } else if (x < 6) {
-> 	print("x is less than 6")
+> x <- 'c'
+> if (x == 'a') {
+>   print("x is equal to 'a'")
+> } else if (x != 'c') {
+> 	print("x is not equal to 'a' or 'c'")
+> } else if (x == 'c') {
+> 	print("x is equal to 'c'")
 > }
 > ~~~
 > {: .language-r}
@@ -727,7 +731,7 @@ A more advanced type of conditional statement combines multiple IF... THEN... EL
 >>
 >> The IF... THEN... ELSE statement outputs a message depending on if the value of x is equal to, greater than, or less than 6:
 >> ~~~
->> x is greater than 6
+>> "x is equal to 'c'"
 >> ~~~
 >> {: .output}
 > {: .solution}
@@ -737,28 +741,28 @@ A more advanced type of conditional statement combines multiple IF... THEN... EL
 
 An even more advanced concept, nested IF... THEN... ELSE statements can increase the flexability of your code by allowing you to specify more complex conditions.
 
-> ## Advanced Challenge
+> ## Advanced Coding Challenge
 > 
 > If you are looking for an additional challenge, consider the following nested IF... THEN... ELSE statement:
 >
 > **Pseudocode**
-> 1. Assign x the value of 4
-> 2. If x is greater than 4, then check if x is equal to 6
+> 1. Assign x the value of 8
+> 2. If x is less than 1, then check if x is equal to 'c'
 > - If x is equal to 6, then print "x is equal to 6"
 > - Else print "x is greater than 4"
 > 3. Else print "x is less than or equal to 4"
 >
 > **R Code**
 > ~~~
-> x <- 4
-> if (x > 4) {
->   if (x = 6) {
->     print("x is equal to 6")
+> x <- 8
+> if (x < 1) {
+>   if (x == 'c') {
+>     print("x is less than 1 and equal to 'c")
 >   } else {
->     print("x is greater than 4")
+>     print("x is less than 1")
 >   }
 > } else {
->   print("x is less than or equal to 4")
+>   print("x is greater than 1")
 > }
 > ~~~
 > {: .language-r}
@@ -767,13 +771,16 @@ An even more advanced concept, nested IF... THEN... ELSE statements can increase
 >>
 >> The nested IF... THEN... ELSE statement outputs the following message:
 >> ~~~
->> x is less than or equal to 4
+>> "x is greater than 1"
 >> ~~~
 >> {: .output}
 > {: .solution}
 {: .challenge}
 
 
+[codingProblems]: https://www.geeksforgeeks.org/how-to-approach-a-coding-problem/
+[rFuncSyntax]: https://www.learnbyexample.org/r-functions/
+[rSyntax]: https://cs.lmu.edu/~ray/notes/syntax/
 [rLang]: https://www.r-project.org/about.html
 [componentsRStudio]: https://datascienceplus.com/introduction-to-rstudio/ 
 [rMotivation]: https://data-flair.training/blogs/why-learn-r/

@@ -174,7 +174,6 @@ The exact details of the formatting conventions your need to follow depends on t
 
 
 [goodProgrammer]: https://mitcommlab.mit.edu/broad/commkit/coding-mindset/
-[codingProblems]: https://www.geeksforgeeks.org/how-to-approach-a-coding-problem/
 [carefulFormatting]: https://coreassistance.com/tips/2018/02/13/be-careful-with-code-formatting/
 
 {% include links.md %}

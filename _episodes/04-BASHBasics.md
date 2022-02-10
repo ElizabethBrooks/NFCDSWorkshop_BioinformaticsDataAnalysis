@@ -4,8 +4,6 @@ teaching: 15
 exercises: 30
 questions:
 - "How do I write code in the BASH programming language?"
-- "How can I approach coding errors in BASH?"
-- "What packages are available to me for biological data analysis in BASH?"
 - "How can I use scripts to automate my data analysis process?"
 objectives:
 - "Extend knowledge of R programming to learn about complementary programs used in the Unix/Linux terminal for data analysis."
@@ -25,7 +23,7 @@ The three primary types of [control statements][controlStructures] are:
 
 The most common control structure of [sequential statements][seqStatements] are lines of code written one after another, and executed line by line.
 
-> ## Challenge - Sequential Statements
+> ## Coding Challenge - Sequential Statements
 >
 > What is output to the console after running the following sequential statments?
 >
@@ -33,7 +31,13 @@ The most common control structure of [sequential statements][seqStatements] are 
 > 1. Assign x the value of 6
 > 2. Print the value of x
 > 
-> **BASH Code**
+> **Code Examples**
+> ~~~
+> x <- 6
+> print(x)
+> ~~~
+> {: .language-r}
+>
 > ~~~
 > x=6
 > echo x
@@ -50,9 +54,9 @@ The most common control structure of [sequential statements][seqStatements] are 
 > {: .solution}
 {: .challenge}
 
-Iterative statements allow you to execute the same piece of code a specified number of times, or until a condition is reached. The most common [iterative statements][loopStatements] are defined using either FOR or WHILE loops.
+Iterative statements allow you to execute the same piece of code a specified number of times, or until a condition is reached. The most common [iterative statements][loopStatements] are defined using either FOR or WHILE loops. Let's start by looking at a flow diagram for a FOR loop, which dipicts the flow of information from inputs to outputs.
 
-> ## Challenge - Iterative Statements 1
+> ## Coding Challenge - Iterative Statements Part 1
 >
 > What does the following FOR loop output?
 >
@@ -61,7 +65,14 @@ Iterative statements allow you to execute the same piece of code a specified num
 > - Assign x the current value
 > - print the value of x
 >
-> **BASH Code**
+> **Code Examples**
+> ~~~
+> for (x in 1:5) {
+>   print(x)
+> }
+> ~~~
+> {: .language-r}
+>
 > ~~~
 > for x in {1..5}
 > do
@@ -86,7 +97,7 @@ Iterative statements allow you to execute the same piece of code a specified num
 
 WHILE loops are another type of iterative statement that can be used as a control structure in your code. This type of iterative statement will continue to execute a piece of code until a condition is reached.
 
-> ## Challenge - Iterative Statements 2
+> ## Coding Challenge - Iterative Statements Part 2
 >
 > What does the following WHILE loop output?
 >
@@ -96,15 +107,25 @@ WHILE loops are another type of iterative statement that can be used as a contro
 > - print the value of x
 > - increment the value of x by 1
 >
-> **BASH Code**
-> ~~~
-> x=1
-> while [ $x -lt 3 ]
-> do
->   echo $x
-> done
-> ~~~
-> {: .language-bash}
+> **Code Examples**
+>> ~~~
+>> x <- 1
+>> while (x < 3) {
+>>   print(x)
+>>   x <- x + 1
+>> }
+>> ~~~
+>> {: .language-r}
+>>
+>> ~~~
+>> x=1
+>> while [ $x -lt 3 ]
+>> do
+>>   echo $x
+>> done
+>> ~~~
+>> {: .language-bash}
+> {: .solution}
 >
 >> ## Solution
 >>
@@ -122,7 +143,7 @@ The most common [conditional statements][conditionalStatements] are defined usin
 
 The most simple form of conditional statement is the IF... THEN form.
 
-> ## Challenge - Conditional Statements 1
+> ## Coding Challenge - Conditional Statements Part 1
 >
 > What does the following IF... THEN conditional statement output?
 >
@@ -130,7 +151,15 @@ The most simple form of conditional statement is the IF... THEN form.
 > 1. Assign x the value of 7
 > 2. If x is greater than 6, then print the value of x
 >
-> **BASH Code**
+> **Code Examples**
+> ~~~
+> x <- 7
+> if (x > 6) {
+>   print(x)
+> }
+> ~~~
+> {: .language-r}
+>
 > ~~~
 > x=7
 > if [ $x -gt 6 ]
@@ -152,7 +181,7 @@ The most simple form of conditional statement is the IF... THEN form.
 
 The next type of conditional statement adds a level of complexity with the IF... THEN... ELSE format.
 
-> ## Challenge - Conditional Statements 2
+> ## Coding Challenge - Conditional Statements Part 2
 >
 > What does the following IF... THEN... ELSE conditional statement output?
 >
@@ -161,7 +190,17 @@ The next type of conditional statement adds a level of complexity with the IF...
 > 2. If x is less than 6, then print the value of x
 > 3. Else print "x is greater than or equal to 6"
 >
-> **BASH Code**
+> **Code Examples**
+> ~~~
+> x <- 7
+> if (x < 6) {
+>   print(x)
+> } else {
+> 	print("x is greater than or equal to 6")
+> }
+> ~~~
+> {: .language-r}
+>
 > ~~~
 > x=7
 > if [ $x -lt 6 ]
@@ -185,7 +224,7 @@ The next type of conditional statement adds a level of complexity with the IF...
 
 A more advanced type of conditional statement combines multiple IF... THEN... ELSE statements to make a compound statememnt with many alternative outcomes.
 
-> ## Challenge - Conditional Statements 3
+> ## Coding Challenge - Conditional Statements Part 3
 >
 > What does the following compound IF... THEN... ELSE conditional statement output?
 >
@@ -195,7 +234,19 @@ A more advanced type of conditional statement combines multiple IF... THEN... EL
 > 3. Else if x is greater than 6, then print "x is greater than 6"
 > 4. Else if x is less than 6, then print "x is less than 6"
 >
-> **BASH Code**
+> **Code Examples**
+> ~~~
+> x <- 7
+> if (x = 6) {
+>   print("x is equal to 6")
+> } else if (x > 6) {
+> 	print("x is greater than 6")
+> } else if (x < 6) {
+> 	print("x is less than 6")
+> }
+> ~~~
+> {: .language-r}
+>
 > ~~~
 > x=7
 > if [ $x -eq 6 ]
@@ -225,7 +276,7 @@ A more advanced type of conditional statement combines multiple IF... THEN... EL
 
 An even more advanced concept, nested IF... THEN... ELSE statements can increase the flexability of your code by allowing you to specify more complex conditions.
 
-> ## Advanced Challenge 1
+> ## Advanced Challenge
 > 
 > If you are looking for an additional challenge, consider the following nested IF... THEN... ELSE statement:
 >
@@ -236,7 +287,21 @@ An even more advanced concept, nested IF... THEN... ELSE statements can increase
 > - Else print "x is greater than 4"
 > 3. Else print "x is less than or equal to 4"
 >
-> **BASH Code**
+> **Code Examples**
+> ~~~
+> x <- 4
+> if (x > 4) {
+>   if (x = 6) {
+>     print("x is equal to 6")
+>   } else {
+>     print("x is greater than 4")
+>   }
+> } else {
+>   print("x is less than or equal to 4")
+> }
+> ~~~
+> {: .language-r}
+>
 > ~~~
 > x=4
 > if [ $x -gt 4 ]
@@ -263,13 +328,5 @@ An even more advanced concept, nested IF... THEN... ELSE statements can increase
 
 
 
-[controlStructures]: https://docs.oracle.com/cd/B19306_01/appdev.102/b14261/controlstructures.htm
-[conditionalStatements]: https://code.org/curriculum/course2/12/Teacher
-[seqStatements]: http://status-twitter.blogspot.com/2013/11/uses-of-sequential-and-compound.html
-[loopStatements]: https://www.javatpoint.com/java-for-loop
-[loopsInR]: https://www.geeksforgeeks.org/loops-in-r-for-while-repeat/
-[ifThenInPython]: https://innovationyourself.com/conditional-statements-in-python/
-[ifElseInR]: https://www.datasciencemadesimple.com/if-else-condition-r/
-[nestedIfElseInR]: https://www.tutorialgateway.org/nested-if-else-in-r/
 
 {% include links.md %}
