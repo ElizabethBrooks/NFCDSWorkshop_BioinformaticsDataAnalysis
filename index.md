@@ -17,7 +17,9 @@ Given the increasing amount of data being generated today, programmatic data ana
 As a hands-on workshop participants will learn what R and Unix/Linux command line tools are available for processing different types of data sets. This workshop begins with a walkthrough of essential programming and scripting techniques. Also included is an introduction to best practices in both programming and data analysis.
 
 ## Audience
-This workshop is designed for anyone interested in learning more about programming best practices, and how to create R and BASH scripts to automate data analysis. No prior programming or data analysis experience is required.
+This workshop is designed for anyone interested in learning more about programming best practices, and how to create R and BASH scripts to automate data analysis. These lessons will help you to learn the fundamental concepts necessary to understand coding, programming, and the basics of the R and BASH programming languages as a beginner.
+
+No prior programming or data analysis experience is required.
 
 > ## Prerequisites
 >

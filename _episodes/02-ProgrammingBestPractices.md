@@ -6,20 +6,16 @@ questions:
 - "What are the benefits of writing programs?"
 - "What are the most helpful programming techniques?"
 - "How can I get started with writing a program?"
-- "What is the best way to tackle coding errors?"
+- "Why is it important to consistently format my code?"
 objectives:
 - "Be able to write pseudocode to describe the steps of a program in a plain language."
 - "Become familiar with methods for writing modular and understandable programs."
 - "Be able to break down an overly complex piece of code into smaller, more readily understandable components."
-- "Be able to write helpful and simple comments and documents for programs."
 keypoints:
 - "Use programs to accomplish complex or repetative tasks."
 - "Write programs that can be understood by others."
 - "Take the time to plan how you will write a program."
-- "Make small changes and plan for mistakes."
 - "Collaborate with others whenever possible."
-- "Always include informative documents for your programs."
-- "Copy and paste!"
 ---
 
 ## Introduction
@@ -51,7 +47,7 @@ By implementing the above programming techniques, you will be better prepared to
 ## Ways to Approach Programming Tasks
 Throughout any programming undertaking we should be thinking about our problem solving thought process. This means that you will need to think critically about how you approach [solving coding problems][codingProblems] with programming. Often you will find that there are many routes to the same solution, and which route you take may depend on your intended user or available tools.
 
-![Good Programmer Characteristics](../fig/How-to-Approach-a-Coding-Problem.png){: width="500" }
+![How to Approach Programming](../fig/How-to-Approach-a-Coding-Problem.png){: width="500" }
 *[Image source][codingProblems]*
 
 > ## Checklist
@@ -153,7 +149,32 @@ For example, let's re-write step 4 of the simple algorithm from our solution to 
 5. Pull left pant leg up so the left foot comes through it
 6. Pull pants up from waitsband
 
+## The Importance of Formatting
+
+It is important to [format your code][carefulFormatting] in a manner that is conducive to reading. While some coding landuages have specific formatting requirements, formatting and commenting code is typically not actually needed for a program to work. Code should always be written in a consistent and logical format so that not only you, but others can read your program and quickly understand the purpose of your program. This is easy to achieve by setting and following a few simple rules.
+
+![Good Program Formatting](../fig/Be-Careful-with-Code-Formatting.png){: width="500" }
+*[Image source][carefulFormatting]*
+
+> ## Checklist
+>
+> By following common formatting conventions, you can begin writting executable code in most programming languages. 
+> 
+> Many formatting rules are centered on the following:
+> - Syntax
+> - Indentation
+> - White space
+> - Capitalization
+> - Naming conventions
+> - Spelling of words (e.g., functions and variables)
+> - Comments
+{: .checklist}
+
+The exact details of the formatting conventions your need to follow depends on the programming language in which you are writting your code.
+
+
 [goodProgrammer]: https://mitcommlab.mit.edu/broad/commkit/coding-mindset/
 [codingProblems]: https://www.geeksforgeeks.org/how-to-approach-a-coding-problem/
+[carefulFormatting]: https://coreassistance.com/tips/2018/02/13/be-careful-with-code-formatting/
 
 {% include links.md %}

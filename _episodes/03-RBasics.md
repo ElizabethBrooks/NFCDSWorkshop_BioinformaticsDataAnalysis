@@ -3,80 +3,589 @@ title: "R Basics"
 teaching: 15
 exercises: 30
 questions:
+- "What is the R programming language?"
 - "How do I write code in the R programming language?"
-- "What packages are available to me for biological data analysis in R?"
-- "How can I use scripts to automate my data analysis process?"
+- "What is the utility of RStudio?"
+- "What is the best way to tackle coding errors?"
 objectives:
 - "Become familiar with the syntax and common functions of the R language."
-- "Be able to install and run function from packages commonly used for data analysis and visualization in R ."
+- "Be able to write helpful and simple comments for programs."
+- "Learn techniques for approaching coding errors."
+- "Become comfortable with working in RStudio"
 keypoints:
-- "TBD"
+- "Make small changes and plan for mistakes."
+- "Write programs that can be understood by others."
+- "Use the ? symbol to examine the description of R functions."
+- "Copy and paste!"
 ---
 
-We can combine boolean expressions with control statements to specify how programs will complete a task. Control statments allow you to have flexible outcomes by selecting which pieces of codes are executed, or not. 
+## The R Programming Language
+
+The [R programming language][rLang] is a great first language for anyone interested in using coding to help answer questions with data analysis, data visualization, and data science. R provides a wide variety of tools for statistical and graphical techniques, including; linear and nonlinear modelling, classical statistical tests, time-series analysis, classification, clustering, and more. A strengths of the R language is the ease with which publication-quality plots can be generated, even including mathematical symbols and formulae.
+
+![Why Learn the R Programming Language](../fig/Why-Learn-R-Reasons-to-learn-R.jpeg){: width="500" }
+*[Image source][rMotivation]*
+
+Since the R programming language is [open source][openSource] it is not proprietary, and it can be modified and built upon by the public.
+
+### The Utility and Componenets of RStudio
+
+RStudio is a very useful software program that allows you to work with the R programming language using a convienient user interface (UI). The interface for RStudio has four main components: source, console, environment/history, files/plots/packages/help.
+
+![Componenets of the RStudio User Interface](../fig/r-studio.png){: width="500" }
+*[Image source][componentsRStudio]*
+
+The most important component of RStudio is the **console**, which is essentially the heart of RStudio. It is from here that you can run code, and it is here that R actually evaluates code.
+
+Another place you can enter and run code is from the **source** component of RStudio. This is where you can write and edit code to save in a file, or scripts. Note that R script files have **.R** or **.r** as their file extension. 
+
+## R Programming Language Syntax
+
+The [syntax of a programming language][rSyntax] defines the meaning of specific combinations of words and symbols. This is why we call programming coding. Each programming language uses different combinations of words and symbols to get the computer to follow the instructions specified in your code. 
+
+### Variables & Data Types
+
+In the R programming language a combination of letters and symbols are used to give names to the data you are actively using in the memory of your computer system. These names are called [variables][rVars]. Variables are named storage that your programs can access and manipulate. These variables may be storing the values you specify directly in your code, or data stored in other files.
+
+To set (assign) the value of a variable means that it is referring (pointing) to a specific value or piece of data in the memory of the computer system that is running (executing) your code. 
+
+~~~
+# here is an integer value
+4
+
+# here is a variable with an assigned integer value of 8
+my_value <- 4
+~~~
+{: .language-r}
+
+In general, the R programming language may be considered a more complicated and capable calculator. Let's start learning to code in R by using the following common arethmatic operation symbols, or operators:
+- addition **+**
+- subtraction **-**
+- division **/**
+- exponentiation **^ or \*\***
+
+To get you started, the following is an example of R code that adds two values of 8 with the addition operator in a few of different ways.
+~~~
+# addition using the values directly
+8 + 8
+
+# addition using the values stored in a variable
+my_value <- 8
+my_value + my_value
+
+# addition using two different variables with the same assigned value
+# and the result is stored in the variable named my_result
+my_value_1 <- 4
+my_value_2 <- 8
+my_result <- my_value_1 + my_value_2
+~~~
+{: .language-r}
+
+> ## Tip!
+>
+> Note that the value of 8 was just stored in the **my_value** variable, which we used earlier to store a value of 4. It is possible to overwrite the data pointed to by a variable by assigning with the **<-** operator a new value to the same variable name. This essentially removes from active memory the previous data value that was stored using that variable name.
+{: .callout}
+
+The type of data that is being stored and referred to by variables often needs to be specified. One reason for this is because some mathematical or computational operations cannot be performed on different data types.
+
+![R Variable and Data Types](../fig/Rvariablesdata.png){: width="500" }
+*[Image source][rVarsTypes]*
+
+> ## Challenge
+>
+> What are some more code examples of variables that have different data types?
+> 
+>> ## Solution
+>> 
+>> ~~~
+>> # variable with a character value 
+>> my_chars <- "hello"
+>> 
+>> # variable with a numeric value
+>> my_nums <- 0.5
+>>
+>> # variable with the result of two numeric values being added together (evaluated)
+>> my_add_result <- 0.5 + 1.7
+>> 
+>> # variable with a value assigned from the data in the my_file.txt text file
+>> my_file_data <- read.delim("my_file.txt")
+>> ~~~ 
+> {: .solution}
+{: .challenge}
+
+### R Functions and Function Definitions
+
+Functions in R are used to  The syntax of a function in R defines a block of code (statements) that can be used repeatedly and on demand (call) in a program.
+
+![Functions Syntax in R](../fig/r-function-syntax.png){: width="500" }
+*[Image source][rSyntax]*
+
+Perhaps the most fundamental function in any programming language is one that allows you to print data to the screen. This allows you to view the values assigned to variables and identify the source of problems in you code, for example.
+
+> ## Tip!
+>
+> The quickest and easiest way to find out more information about a function, what it is, and how to use it is with the **?** symbol in RStudio.
+>
+> ~~~
+> # examine the documentation for the print function in R
+> ?print
+> ~~~
+{: .callout}
+
+The most common function to print outputs in R is named **print**. This function requires as input a R object, such as a character string or variable.
+
+~~~
+# print a character object to the screen
+print("Coding is fun!")
+
+# print a variable to the screen
+my_var <- "Coding is fun!"
+print(my_var)
+~~~
+{: .language-r}
+
+Vector, matrices, and data frames are slightly called R objects. Objects are a concept fundamental to [object oriented programming][OOP], and each obejct has specific attributes and behaviors. In the R programming language these are named storage that contains 1D and 2D collections of variables of the same data type. Each piece of data in a vector can be accessed by specifying the index of the piece of data, or element. Furthermore, vectors can be assigned to variables in R.
+
+To create 1D vector storages we can use built in R functions. For example, we can create a vector of numbers representing the sequence of values as follows.
+
+~~~
+# 1D vector using the : binary operator
+1:10
+
+# 1D vector in the reverse order
+10:1
+
+# examine the documentation for the seq function in R
+?seq
+
+# 1D vector using the seq function and explicit arguments
+seq(from = 1, to = 10)
+
+# 1D vector using the seq function and implicit arguments
+seq(1, 10)
+
+# print a 1D vector to the screen using the print and seq functions together
+print(seq(1,10))
+
+# variable with an assigned value of a 1D vector object
+my_vector <- seq(1, 10)
+
+# view the data contents of myVector using the print function
+print(my_vector)
+
+# short hand way to view the data contents of myVector
+my_vector
+
+# access the second element of the vector stored in myVector
+my_vector[2]
+~~~
+{: .language-r}
+
+> ## Tip!
+>
+> Note that we were able to use (call) a **print** function using a **seq** function contained (nested) inside the arguments of the **print** function. Nested function calls allow you to perform multiple tasks using fewer lines of code, for example.
+{: .callout}
+
+> ## Challenge
+> 
+> How would you print both a character object and a variable to the screen?
+> **Tip:** Use the internet to search "r print string and variable", for example.
+>
+>> ## Solution
+>> 
+>> ~~~
+>> # store a integer value in a variable
+>> my_var <- 20
+>> 
+>> # print the value stored both the variable and character object
+>> # to the console using the cat function
+>> cat("The value of my_var is", my_var)
+>> ~~~
+>> {: .language-r}
+> {: .solution}
+{: .challenge}
+
+Next, we can use different R functions to create a 2D data frame and a 2D matrix that each contain multiple sets of sequences. Matrices are objects in which the elements are arranged in a 2D rectangular layout, and data frames are 2D tables in which each column contains values of one variable and each row contains one set of values from each column. Additionally, we can access different pieces of data (elements) stored in our matrix by using the column and row index of the element.
+
+~~~
+# examine the documentation for the matrix function in R
+?matrix
+
+# 2D matrix where the sequence data is filled in by row
+# and the data specified using a nested seq function call
+matrix(data = seq(1, 10), nrow = 2, byrow = TRUE)
+
+# 2D matrix where the sequence data is filled in by column 
+# with the default byrow argument value of FALSE and implicit data argument
+matrix(seq(1, 10), nrow = 2)
+
+# variable storing 1D sequence data
+my_vector <- seq(1, 10)
+
+# 2D matrix where the sequence data is added (passed) to the matrix function using a variable
+matrix(my_vector, nrow = 2)
+
+# variable storing 2D matrix where the data argument is passed using a variable
+my_mat <- matrix(my_vector, nrow = 2)
+
+# view the contents of my_mat
+my_mat
+
+# access the first element of the second column using the column and row index of the element
+my_mat[1,2]
+~~~
+{: .language-r}
+
+> ## Challenge
+>
+> How would you access a specific element of a matrix that is not stored in memory using a variable?
+>
+>> ## Solution
+>>
+>> ~~~
+>> # access the first element of the second column in a matrix not stored in memory while it is created
+>> matrix(seq(1, 10), nrow = 2)[1,2]
+>> ~~~
+>> {: .language-r}
+> {: .solution}
+{: .challenge}
+
+Similar to using the **matrix** function, we can use the **data.frame** function to create 2D data tables. Remeber that these are simply a collection of vectors that all have the same (equal) length. An interesting difference between data frames and matrices is that data frames can be a collection of vectors each with different data types, but matrices require all the row and column vectors of data to be the same type.
+
+~~~
+# examine the documentation for the c function in R
+?c
+
+# variable with a 1D vector of character data to be used as our first column
+char_var <- c("coding in", "R", "is fun", ":)") 
+
+# variable with a 1D vector of integer data to be used as our first column
+seq_var <- seq(1, 4) 
+
+# examine the documentation for the data.frame function in R
+?data.frame
+
+# 2D data frame storing our three 1D vectors using explicit column naming
+data.frame(characters = char_var, integers = seq_var)
+
+# variable with a 2D data frame storing our three 1D vectors using implicit column naming
+df <- data.frame(char_Var, seq_var, logic_Var)
+~~~
+{: .language-r}
+
+As we have seen, it is often useful to think of the 2D storage of values in data frames and matrices as a combination of 1D storages. We use the **[]** operator to select not only a single element of a 1D or 2D data collection, but also to break down a 2D matrix or data frame and retrieve specific vectors or other data subsets.
+
+~~~
+# take a look at the letters function
+?letters
+
+# variable with a 4x2 matrix of sequential letters starting with a
+my_mat <- matrix(letters[1:8], ncol = 2)
+
+# retrieve the first element of my_mat
+my_mat[1, 1]
+
+# retrieve the entire third row of my_mat
+my_mat[3,]
+
+# retrieve the entire second column of my_mat
+my_mat[,2]
+
+# retrieve the subset of my_mat that is the second (bottom) half
+my_mat[3:4, 1:2]
+
+# variable with a 4x4 data frame
+my_DF <- data.frame(
+	chars = letters[1:4], 
+	ints = 1:4, 
+	logics = c(TRUE, FALSE, TRUE, TRUE), 
+	nums = seq(from = 0.1, to = 1, length.out = 4)
+)
+
+# retrieve the first half of myDF
+my_DF[1:2, 1:2]
+~~~
+{: .language-r}
+
+> ## Tip!
+>
+> If a line of code becomes too long and shifts (wraps around) to the next line, it is a good idea to break it into appropriate code pieces on separate lines. For example, in the previous **my_DF** function call we wrote each argument on a separate line.
+{: .callout}
+
+> ## Callenge
+> 
+> How are the values for in the sequence of decimals in the following **seq** function call calculated?
+> ~~~
+> seq(from = 0.1, to = 1, length.out = 4)
+> ~~~
+> {: .language-r}
+> 
+> ## Solution
+>
+> From looking at the documentation for seq using the **?** operator:
+> ~~~
+> ## Default S3 method:
+> seq(from = 1, to = 1, by = ((to - from)/(length.out - 1)),
+>    length.out = NULL, along.with = NULL, ...)
+> ~~~
+> {: .language-r}
+{: .discussion}
+
+A powerful benefit of coding is the ability to create our own function definitions in R. This allows us to re-use a set of code statements arranged to perform a specific task. In R a function is created (defined) by using the keyword **function**. The basic syntax of an R function definition is as follows:
+
+~~~
+function_name <- function(arg_1, arg_2, ...) {
+   # function body 
+}
+~~~
+{: .language-r}
+
+> ## Challenge
+>
+> How can you view the documentation for the **function** R function in RStudio?
+>
+>> ## Solution
+>> 
+>> While typing in **?function** a message will pop up suggesting relevant R functions. While hovering your mouse over the **function** R function in the pop up, press F1.
+>> 
+>> ![RStudio function Help Tip](../fig/functionHelp.png){: width="500" }
+> {: .solution}
+{: .challenge}
+
+> ## Checklist
+>
+> Note that a function in R has the following components:
+> - **function name** − the name of the function, which is stored in R environment as an R object with this name
+> - **arguments** − an optional placeholder for when a function is called (invoked). If a function has arguments and they do not have default values, you need to give (pass) values to the arguments
+> - **function body** − contains a collection of code statements that defines what the function does
+> - **return value** − the last expression evaluated in the function body
+{: .checklist}
+
+Let's practice making our own **user defined** functions using **function**, which is a **built in** R function. As a first step, we will make a couple functions with out arguments.
+
+~~~
+# definition of a function named my_function,
+# which assigns values to two variables and adds them
+my_function <- function() {
+	first_val <- 2
+	second_val <- 4
+	result <- first_val + second_val
+}
+
+# run the function by calling it by its name
+my_function()
+
+# function with an extra final line of code added to the function body
+my_better_function <- function() {
+	first_val <- 2
+	second_val <- 4
+	result <- first_val + second_val
+	result
+}
+
+# run the function by calling it by its name
+my_better_function()
+~~~
+{: .language-r}
+
+> ## Discussion
+>
+> What is the difference between the definitions of the **my_function** and **my_better_function** functions, and why is this difference important?
+{: .discussion}
+
+Next, let's make some functions that require the input of arguments when they are run (callled).
+
+~~~
+# function to add two variables using arguments
+my_addition_function <- function(first_arg, second_arg) {
+	first_val <- first_arg
+	second_val <- second_arg
+	result <- first_val + second_val
+	result
+}
+
+# run the function by calling it by its name
+# THIS WILL RESULT IN AN ERROR
+my_addition_function()
+
+# run the function by passing the function call the necessary arguments
+my_addition_function(2, 4)
+
+# function to add two variables using default arguments
+my_default_addition_function <- function(first_arg = 0, second_arg = 0) {
+	first_val <- first_arg
+	second_val <- second_arg
+	result <- first_val + second_val
+	result
+}
+
+# run the function by calling it by its name
+my_default_addition_function()
+
+# run the function by passing the function call the necessary arguments
+my_default_addition_function(2, 4)
+~~~
+{: .language-r}
+
+> ## Challenge
+> 
+> Now write and run your own function! Try using some of the other functions we have learned about so far in the body of the function you create. Remember that the last line of the function body is what gets returned when the function is called (run).
+{: .challenge}
+
+> ## Discussion
+>
+> Because specific combinations of words and symbols have differfent meanings (syntax), the formatting of a function in R typically has several common features. What are some of these formatting features?
+> 
+>> ## Solution
+>> 
+>> Some of the typical formatting features of a R function include:
+>> - assignment operator **<-**
+>> - **function** tag word
+>> - parentheses
+>> - curly braces
+>> - commas between any arguments
+>> - indentation of function body
+>> 
+> {: .solution}
+{: .discussion}
+
+## How to Find and Fix Bugs
+
+While writting code it is very common to encounter errors that prevent your code from running (executing) in the expected manner. These errors are often the result of bugs, or flaws in your code.
+
+![How to Approach Debugging](../fig/debugging2.png){: width="500" }
+*[Image source][codingProblems]*
+
+The first step anytime you are trying to solve an error is to find the bug, which is the source of the error. To see an error in action, let's try to define a function that uses incompatible data types to perform a mathematical operation.
+
+~~~
+# definition of a funtion to add incompatible data type
+my_function <- function() {
+	first_val <- 2
+	second_val <- "4"
+	result <- first_val + second_val
+	result
+}
+
+# run the function by calling it by its name
+my_function()
+~~~
+{: .language-r}
+
+This results in the following message to be output (returned) to the screen (console):
+
+~~~
+Error in first_val + second_val : non-numeric argument to binary operator
+~~~
+{: .error}
+
+But from this message we cannot tell exactly which argument has the problem **non-numeric** value. Let's use the **print** function to find the exact source of the error.
+
+~~~
+# definition of a funtion to add incompatible data type
+my_function <- function(first_arg, second_arg) {
+	first_val <- first_arg
+	second_val <- second_arg
+	# added print statement to look at the value of each argument
+	print(first_val)
+	print(second_val)
+	result <- first_val + second_val
+	result
+}
+
+# run the function with an intentional error
+my_function(2, "4")
+~~~
+{: .language-r}
+
+> ## Challenge
+>
+> What is another function we can use to find the exact source of the error?
+> **Tip:** Use the internet to search "r view data type", for example.
+>
+>> ## Solution
+>>
+>> ~~~
+>> # definition of a funtion to add incompatible data type
+>> my_function <- function(first_arg, second_arg) {
+>>	first_val <- first_arg
+>>	second_val <- second_arg
+>>	# added print statement to look at the value of each argument
+>>	typeof(first_val)
+>>	typeof(second_val)
+>>	result <- first_val + second_val
+>>	result
+>> }
+>>
+>> # run the function with an intentional error
+>> my_function(2, "4")
+>> ~~~
+>> {: .language-r}
+> {: .solution}
+{: .challenge}
+
+It is crucial to look for the first bug in your code when you are trying to find the source of an error. In general, you need to look for bugs starting at the top and work your way to the bottom of your code.
+
+> ## Discussion
+>
+> Why is it so important to look for the earliest bug that appears in your code to fix first?
+{: .discussion}
+
+
+## Logic & Control Statements in R
+
+Recall that we can combine boolean expressions with control statements to specify how programs will complete a task. Control statments allow you to have flexible outcomes by selecting which pieces of codes are executed, or not. 
 
 The three primary types of [control statements][controlStructures] are: 
 - Sequential statmenetes are executed in the default ordering
 - Iterative statements control the number of times a block of code is executed
 - Conditional (or selection) statements control which blocks of code are executed, and which are not
 
-The most common type of control structure are [sequential statements][seqStatements]. These are indicated by code statements written one after another, are are executed line by line. This means that the statements are performed in a top to bottom sequence according to how they are written.
+The most common control structure of [sequential statements][seqStatements] are lines of code written one after another, and executed line by line.
 
 > ## Challenge - Sequential Statements
 >
-> What does the following sequential statment output?
+> What is output to the console after running the following sequential statments?
 >
-> **Pseudocode:**
-> 1. 
->
->> ## Code Examples
->> ~~~
->> 
->> ~~~
->> {: .language-r}
->>
->> ~~~
->> 
->> ~~~
->> {: .language-bash}
-> {: .solution}
+> **Pseudocode**
+> 1. Assign x the value of 6
+> 2. Print the value of x
+> 
+> **R Code**
+> ~~~
+> x <- 6
+> print(x)
+> ~~~
+> {: .language-r}
 >
 >> ## Solution
 >>
+>> The output of the sequential statements:
 >> ~~~
->> 
+>> 6
 >> ~~~
 >> {: .output}
 > {: .solution}
 {: .challenge}
 
-Iterative statements allow you to execute the same piece of code a specified number of times, or until a condition is reached. The most common [iterative statements][loopStatements] are defined using either FOR or WHILE loops. Let's start by looking at a flow diagram for a FOR loop, which dipicts the flow of information from inputs to outputs.
+Iterative statements allow you to execute the same piece of code a specified number of times, or until a condition is reached. The most common [iterative statements][loopStatements] are defined using either FOR or WHILE loops.
 
 > ## Challenge - Iterative Statements 1
 >
 > What does the following FOR loop output?
 >
-> **Pseudocode:**
+> **Pseudocode**
 > 1. For each value in the sequence 1, 2, 3, 4, 5 
 > - Assign x the current value
 > - print the value of x
 >
->> ## Code Examples
->> ~~~
->> for (x in 1:5) {
->>   print(x)
->> }
->> ~~~
->> {: .language-r}
->>
->> ~~~
->> for x in {1..5}
->> do
->>   echo $x
->> done
->> ~~~
->> {: .language-bash}
-> {: .solution}
+> **R Code**
+> ~~~
+> for (x in 1:5) {
+>   print(x)
+> }
+> ~~~
+> {: .language-r}
 >
 >> ## Solution
 >>
@@ -98,31 +607,21 @@ WHILE loops are another type of iterative statement that can be used as a contro
 >
 > What does the following WHILE loop output?
 >
-> **Pseudocode:**
+> **Pseudocode**
 > 1. Assign x the value of 1
 > 2. While x is less than 3 
 > - print the value of x
 > - increment the value of x by 1
 >
->> ## Code Examples
->> ~~~
->> x <- 1
->> while (x < 3) {
->>   print(x)
->>   x <- i + 1
->> }
->> ~~~
->> {: .language-r}
->>
->> ~~~
->> x=1
->> while [ $x -lt 3 ]
->> do
->>   echo $x
->> done
->> ~~~
->> {: .language-bash}
-> {: .solution}
+> **R Code**
+> ~~~
+> x <- 1
+> while (x < 3) {
+>   print(x)
+>   x <- i + 1
+> }
+> ~~~
+> {: .language-r}
 >
 >> ## Solution
 >>
@@ -144,28 +643,18 @@ The most simple form of conditional statement is the IF... THEN form.
 >
 > What does the following IF... THEN conditional statement output?
 >
-> **Pseudocode:**
+> **Pseudocode**
 > 1. Assign x the value of 7
 > 2. If x is greater than 6, then print the value of x
 >
->> ## Code Examples
->> ~~~
->> x <- 7
->> if (x > 6) {
->>   print(x)
->> }
->> ~~~
->> {: .language-r}
->>
->> ~~~
->> x=7
->> if [ $x -gt 6 ]
->> then
->>   echo $x
->> fi
->> ~~~
->> {: .language-bash}
-> {: .solution}
+> **R Code**
+> ~~~
+> x <- 7
+> if (x > 6) {
+>   print(x)
+> }
+> ~~~
+> {: .language-r}
 >
 >> ## Solution
 >>
@@ -183,33 +672,21 @@ The next type of conditional statement adds a level of complexity with the IF...
 >
 > What does the following IF... THEN... ELSE conditional statement output?
 >
-> **Pseudocode:**
+> **Pseudocode**
 > 1. Assign x the value of 7
 > 2. If x is less than 6, then print the value of x
 > 3. Else print "x is greater than or equal to 6"
 >
->> ## Code Examples
->> ~~~
->> x <- 7
->> if (x < 6) {
->>   print(x)
->> } else {
->> 	print("x is greater than or equal to 6")
->> }
->> ~~~
->> {: .language-r}
->>
->> ~~~
->> x=7
->> if [ $x -lt 6 ]
->> then
->>   echo $x
->> else
->>   echo "x is greater than or equal to 6"
->> fi
->> ~~~
->> {: .language-bash}
-> {: .solution}
+> **R Code**
+> ~~~
+> x <- 7
+> if (x < 6) {
+>   print(x)
+> } else {
+> 	print("x is greater than or equal to 6")
+> }
+> ~~~
+> {: .language-r}
 >
 >> ## Solution
 >>
@@ -227,40 +704,24 @@ A more advanced type of conditional statement combines multiple IF... THEN... EL
 >
 > What does the following compound IF... THEN... ELSE conditional statement output?
 >
-> **Pseudocode:**
+> **Pseudocode**
 > 1. Assign x the value of 7
 > 2. If x is equal to 6, then print "x is equal to 6"
 > 3. Else if x is greater than 6, then print "x is greater than 6"
 > 4. Else if x is less than 6, then print "x is less than 6"
 >
->> ## Code Examples
->> ~~~
->> x <- 7
->> if (x = 6) {
->>   print("x is equal to 6")
->> } else if (x > 6) {
->> 	print("x is greater than 6")
->> } else if (x < 6) {
->> 	print("x is less than 6")
->> }
->> ~~~
->> {: .language-r}
->>
->> ~~~
->> x=7
->> if [ $x -eq 6 ]
->> then
->>   echo "x is equal to 6"
->> elif [ $x -gt 6 ]
->> then
->>   echo "x is greater than 6"
->> elif [ $x -lt 6 ]
->> then
->>   echo "x is less than 6"
->> fi
->> ~~~
->> {: .language-bash}
-> {: .solution}
+> **R Code**
+> ~~~
+> x <- 7
+> if (x = 6) {
+>   print("x is equal to 6")
+> } else if (x > 6) {
+> 	print("x is greater than 6")
+> } else if (x < 6) {
+> 	print("x is less than 6")
+> }
+> ~~~
+> {: .language-r}
 >
 >> ## Solution
 >>
@@ -276,46 +737,31 @@ A more advanced type of conditional statement combines multiple IF... THEN... EL
 
 An even more advanced concept, nested IF... THEN... ELSE statements can increase the flexability of your code by allowing you to specify more complex conditions.
 
-> ## Advanced Challenge 1
+> ## Advanced Challenge
 > 
 > If you are looking for an additional challenge, consider the following nested IF... THEN... ELSE statement:
 >
-> **Pseudocode:**
+> **Pseudocode**
 > 1. Assign x the value of 4
 > 2. If x is greater than 4, then check if x is equal to 6
 > - If x is equal to 6, then print "x is equal to 6"
 > - Else print "x is greater than 4"
 > 3. Else print "x is less than or equal to 4"
 >
->> ## Code Examples
->> ~~~
->> x <- 4
->> if (x > 4) {
->>   if (x = 6) {
->>     print("x is equal to 6")
->>   } else {
->>     print("x is greater than 4")
->>   }
->> } else {
->>   print("x is less than or equal to 4")
->> }
->> ~~~
->> {: .language-r}
->>
->> ~~~
->> x=4
->> if [ $x -gt 4 ]
->> then
->>   if [ $x -eq 6 ]
->>   then
->>     echo "x is greater than 4"
->>   else
->>     echo "x is less than or equal to 4"
->>   fi
->> fi
->> ~~~
->> {: .language-bash}
-> {: .solution}
+> **R Code**
+> ~~~
+> x <- 4
+> if (x > 4) {
+>   if (x = 6) {
+>     print("x is equal to 6")
+>   } else {
+>     print("x is greater than 4")
+>   }
+> } else {
+>   print("x is less than or equal to 4")
+> }
+> ~~~
+> {: .language-r}
 >
 >> ## Solution
 >>
@@ -327,22 +773,14 @@ An even more advanced concept, nested IF... THEN... ELSE statements can increase
 > {: .solution}
 {: .challenge}
 
-> ## Advanced Challenge 2
->
-> What are the outputs of the following sequential and nested conditional statements?
->
->
->
-> What are the similarities and differences between these sequential and nested conditional statements?
->
-> 
->
->> ## Solution
->>
->> 
-> {: .solution}
-{: .challenge}
 
+[rLang]: https://www.r-project.org/about.html
+[componentsRStudio]: https://datascienceplus.com/introduction-to-rstudio/ 
+[rMotivation]: https://data-flair.training/blogs/why-learn-r/
+[openSource]: https://www.techopedia.com/definition/25149/open-source-language
+[OOP]: https://www.datacamp.com/community/tutorials/r-objects-and-classes
+[rVars]: https://www.tutorialspoint.com/r/r_variables.htm
+[rVarsTypes]: https://sydney-informatics-hub.github.io/lessonbmc/02-BMC_R_Day1_B/index.html
 [controlStructures]: https://docs.oracle.com/cd/B19306_01/appdev.102/b14261/controlstructures.htm
 [seqStatements]: http://status-twitter.blogspot.com/2013/11/uses-of-sequential-and-compound.html
 [loopStatements]: https://www.javatpoint.com/java-for-loop
@@ -350,5 +788,6 @@ An even more advanced concept, nested IF... THEN... ELSE statements can increase
 [ifThenInPython]: https://innovationyourself.com/conditional-statements-in-python/
 [ifElseInR]: https://www.datasciencemadesimple.com/if-else-condition-r/
 [nestedIfElseInR]: https://www.tutorialgateway.org/nested-if-else-in-r/
+
 
 {% include links.md %}
