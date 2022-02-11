@@ -60,7 +60,7 @@ So, we can see that there are some important similarities and differences betwee
 >
 > Notice that there is a *Terminal* tab in the RStudio window with the *Console* component. This allows you to run BASH commands in the RStudio interface, which also provides a convienient location to write and edit BASH script files.
 >
-> ![Terminal in RStudio](../fig/2020-07-09_11-27-shell.png){: width="800" }
+> ![Terminal in RStudio](../fig/2020-07-09_11-27-shell.png){: width="500" }
 > *[Image source][terminalRStudio]*
 {: .callout}
 
