@@ -6,16 +6,17 @@ questions:
 - "What is the R programming language?"
 - "How do I write code in the R programming language?"
 - "What is the utility of RStudio?"
-- "What is the best way to tackle coding errors?"
+- "What are the components and features of R and RStudio?"
+- "How can I write and run R code in RStudio?"
 objectives:
 - "Become familiar with the syntax and common functions of the R language."
 - "Be able to write helpful and simple comments for programs."
-- "Learn techniques for approaching coding errors."
-- "Become comfortable with working in RStudio"
+- "Become comfortable with working in RStudio."
+- "Practice writing R code to perform basic operations."
 keypoints:
-- "Make small changes and plan for mistakes."
-- "Write programs that can be understood by others."
+- "Understanding the syntax of a programming language is crucial to writing error free code."
 - "Use the ? symbol to examine the description of R functions."
+- "Search the internet for further information about R functions."
 - "Copy and paste!"
 ---
 
@@ -54,7 +55,7 @@ Another place you can enter and run code is from the **source** component of RSt
 
 The [syntax of a programming language][rSyntax] defines the meaning of specific combinations of words and symbols. This is why we call programming coding. Each programming language uses different combinations of words and symbols to get the computer to follow the instructions specified in your code. 
 
-![What is Syntax?](../fig/Difference-Between-Morphology-and-Syntax.png){: width="800" }
+![What is Syntax?](../fig/Difference-Between-Morphology-and-Syntax.png){: width="500" }
 *[Image source][whatIsSyntax]*
 
 

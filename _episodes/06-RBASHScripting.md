@@ -3,16 +3,25 @@ title: "R & BASH Scripting"
 teaching: 10
 exercises: 20
 questions:
-- "TBD"
+- "Why is scripting useful?"
+- "How can I write and run R and BASH scripts RStudio and terminal?"
+- "How can I use scripts to automate my data analysis process?"
+- "What is the best way to tackle coding errors?"
 objectives:
-- "TBD"
+- "Discover some reasons why scripting is helpful for data analysis."
+- "Learn how to run R scripts using BASH scripts."
+- "Learn techniques for approaching coding errors."
 keypoints:
-- "TBD"
+- "Make small changes and plan for mistakes."
+- "Feel free to use RStudio to create, edit, and run BASH scripts."
+- "Copy and paste!"
 ---
 
 ## Introduction to Scripting
 
-Not only can we save the code we have written by using BASH and R scripts, but we can also use scripting to create modular pieces of code. This is useful for automating repetative tasks and performing data analysis. It is also possible to have scripts recieve user inputs (arguments), just like the *built-in* and *user-defined* functions we have been using in R and BASH.
+Not only can we save the code we have written by using BASH and R scripts, but we can also use scripting to create modular pieces of code for use in data analysis. This is particularly helpful for automating repetative tasks in data analysis pipelines. 
+
+It is also possible to have scripts recieve user inputs (arguments), just like the *built-in* and *user-defined* functions we have been using in R and BASH.
 
 
 ## R & BASH Scripting
@@ -226,6 +235,9 @@ my_default_add_function 2 4
 ~~~
 {: .language-bash}
 
+
+### The Scope of R and BASH Variables
+
 Now let's try an interesting example that illustrates the differences between the [*scope* of variables][scopeVars] in the R and BASH environments.
 
 ~~~
@@ -321,6 +333,45 @@ echo "After running my_function: var1: $var1, var2: $var2"
 > 
 > Remember that in R the last line of the function body is what gets returned when the function is executed (run). Also, there are several formatting differences between R and BASH function defitions and calling (commands).
 {: .challenge}
+
+
+### Using BASH Scripts to Run R Scripts
+
+A powerful benefit of BASH scripting is the abiliy to run other scripts called within the **.sh** file. 
+
+For example, let's create a simple test R script named *my_RScript.r* with the following code contents:
+
+~~~
+# print a message to the screen
+print("Hello from my_RScript.r script!")
+~~~
+{: .landuage-r}
+
+Now we can use the following BASH script to execute the R script we just made. We'll name this BASH script file *my_BASHScript_first.sh*.
+
+~~~
+#!/bin/bash
+
+# run my_RScript.r script
+Rscript my_RScript.r
+
+# print a message to the screen
+echo "Hello from my_BASHScript_first.sh script!"
+~~~
+{: .landuage-bash}
+
+We can also use a different BASH script to run our previous BASH script. We'll name this BASH script file *my_BASHScript_last.sh*.
+
+~~~
+#!/bin/bash
+
+# run my_BASHScript_first.sh script
+bash my_BASHScript_first.sh
+
+# print a message to the screen
+echo "Hello from my_BASHScript_last.sh script!"
+~~~
+{: .landuage-bash}
 
 
 ## How to Find and Fix Bugs

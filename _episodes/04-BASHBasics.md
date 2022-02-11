@@ -1,15 +1,23 @@
 ---
-title: "BASH Basics & Scripting"
+title: "BASH Basics"
 teaching: 10
 exercises: 20
 questions:
-- "How do I write code in the BASH programming language?"
-- "How can I use scripts to automate my data analysis process?"
+- "What is the BASH command language?"
+- "How do I write code in the BASH command language?"
+- "What are the components and features of BASH?"
+- "How can I write and run BASH code?"
 objectives:
-- "Extend knowledge of R programming to learn about complementary programs used in the Unix/Linux terminal for data analysis."
-- "Discover the differences between R and BASH scripting."
+- "Become familiar with the syntax and common functions of the BASH language."
+- "Become comfortable with working in the terminal."
+- "Extend knowledge of R to learn about complementary programs used in the Unix/Linux terminal."
+- "Practice writing BASH code to perform basic operations."
+- "Discover important similarities and differences between R and BASH programming."
 keypoints:
-- "TBD"
+- "BASH and R share a lot of the same basic functionalities."
+- "Use the -h flag to examine the description of some BASH commands."
+- "Search the internet for further information about BASH commands."
+- "Copy and paste!"
 ---
 
 ## The BASH Programming Language
@@ -26,7 +34,7 @@ The BASH language is used to communicate with the interpreter component of a com
 
 ### The Utility and Components of BASH
 
-To many beginning programmers it can seem like BASH is a big black box, which can make it difficult to get started with BASH programming. But there are just a few componenets of BASH that we need to know to understand how BASH integrates with the computer system.
+To many beginning programmers BASH can appear intimidating, which can make it difficult to get started with BASH programming. But there are just a few componenets of BASH that we need to know to understand how BASH integrates with the computer system.
 
 ![Components of the Computer with Shell](../fig/diagram3-terminal-and-shell.png){: width="800" }
 *[Image source][componentsBASH]*
@@ -90,9 +98,7 @@ my_value=8
 > ~~~
 > {: .language-bash}
 >
-> Finally, what happens when you enter the following comment line in the command line?
-> 
-> And what happens when you enter this piece of BASH code in the command line?
+> Finally, what happens when you enter this piece of BASH code in the command line?
 > ~~~
 > # this is a comment
 > ~~~
@@ -232,7 +238,7 @@ Recall that in the R programming language *vectors*, *matrices*, and *data frame
 > 
 > But there is an important difference with array indexing between BASH and Z shell. In the BASH language arrays start at the integer **0**, whereas in Z shell array indexing begins with the integer **1**. 
 >
-> ![BASH vs Z Shell](../fig/PicsArt_08-24-09.12.54.jpg){: width="800" }
+> ![BASH vs Z Shell](../fig/PicsArt_08-24-09.12.54.jpg){: width="500" }
 > *[Image source][bashVsZsh]*
 {: .callout}
 

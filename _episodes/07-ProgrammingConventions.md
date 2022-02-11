@@ -1,15 +1,41 @@
 ---
 title: "Programming Language Conventions"
-teaching: 10
-exercises: 10
+teaching: 15
+exercises: 5
 questions:
-- "Why is it important to leave notes in my code about what it does?"
+- "Why is it important to consistently format my code?"
+- "What are some common guidelines for writting R and BASH code?"
 objectives:
-- "Review the syntax and common functions of R and BASH."
-- "Be able to write helpful and simple comments and documents for programs."
+- "Understand the importance of programming language conventions."
+- "Review the syntax and common features of R and BASH."
 keypoints:
-- "Always include informative documents for your programs."
+- "Some coding languages have specific formatting requirements."
+- "Do not modify the existing formatting of code."
 ---
+
+## The Importance of Formatting
+
+It is important to [format your code][carefulFormatting] in a manner that is conducive to reading. While some coding languages have specific formatting requirements, formatting and commenting code is typically not actually needed for a program to work. Code should always be written in a consistent and logical format so that not only you, but others can read your program and quickly understand the purpose of your program. This is easy to achieve by setting and following a few simple rules.
+
+![Good Program Formatting](../fig/Be-Careful-with-Code-Formatting.png){: width="800" }
+*[Image source][carefulFormatting]*
+
+> ## Checklist
+>
+> By following common formatting conventions, you can begin writting executable code in most programming languages. 
+> 
+> Many formatting rules are centered on the following:
+> - Syntax
+> - Indentation
+> - White space
+> - Capitalization
+> - Naming conventions
+> - Spelling of words (e.g., functions and variables)
+> - Comments
+{: .checklist}
+
+The exact details of the formatting conventions your need to follow depends on the programming language in which you are writting your code.
+
 
 ## Programming Language Conventions 
 
@@ -60,7 +86,7 @@ We now know that specific combinations of words and symbols have differfent mean
 
 > ## Checklist
 >
-> The syntax of the R programming language has several components:
+> The syntax of the R programming language has several components, some of these include:
 > **Spacing**
 > - Place spaces around all infix operators (e.g., =, +, -, <-)
 > - Place spaces around = in function calls
@@ -89,65 +115,51 @@ We now know that specific combinations of words and symbols have differfent mean
 
 > ## Checklist
 >
-> The syntax of the BASH programming language has several components:
+> The syntax of the BASH programming language has several components, some of these include:
+> **Indentation**
+> - Indent 2 spaces
+> - No tabs
+> - Use blank lines between blocks of code to improve readability
 >
+> **Line Length & Long Strings**
+> - Maximum line length is 80 characters
+>
+> **Pipelines**
+> - The entire pipeline of commands should be written on one line when possible
+> - Commands be split one per line, if all the commands do not fit on one line
+>
+> **Loops**
+> - Put **;** do and **;** then on the same line as the **while**, **for** or **if** keywords
+> - **else** should be on its own line
+> - Closing statements should be on their own line, and vertically aligned with the opening statement
+>
+> **Variable Expansion**
+> - Quote your variables
+> - Prefer the "${var}" over "$var" form, which is called [*brace-delimiting*][varExpand]
+>
+> **Quoting**
+> - Always quote strings containing variables, command substitutions, spaces or shell meta characters
+> - Use arrays for safe quoting of lists of elements, especially command line flags
+> - Prefer quoting strings that are *words*, in contrast to command options or file path names
+> - Never quote literal integers
+> - Use "$@" unless you have a specific reason to use $\*
 {: .checklist}
 
 > ## Discussion
 >
+> What should you do if a file of code you are eiditing does not follow established, or common language conventions?
 >
+>> ## Solution
+>>
+>> Note that for existing files of code that you are editing, it is best to not modify the existing formatting.
+> {: .solution}
 {: .discussion}
 
-### Commenting & Helpful Services
 
-Small [meaningful comments][meaningfulComments] throughout your code can be a great way to leave yourself and others helpful notes about the purpose of your code. This is particularly important when approaching a new coding challenge, or when you need to take break. It is also helpful to leave frequent comments for code in programming languages you do not freuqently write in.
-
-![Tips for Creating Meaningful Comments](../fig/meaningfulComments.png){: width="800" }
-*[Image source][meaningfulComments]*
-
-> ## Checklist
->
-> A general rule of thumb when coding is to have comments at least every 5 lines. Some other tips to keep in mind include when coding in R:
-> - Preferably write code while you are coding, and not after
-> - Each line of a comment should begin with the comment symbol **#** and a single space
-> - Comments should explain the why and not the what, unless helpful for your future self
-> - Use commented lines of multiple - and = to break up your file into easily readable chunks
-{: .checklist}
-
-Creating comments for your code is most useful when you are describing *why* it does what it does. This gives your code context, which gives other developers (or your future self) more insights into the design decisions behind a piece of code.
-
-Looking at the documentation is one of the best ways to find out or recall exactly *what* a piece of code is doing. Another great way to learn the meaning of different pieces of code is through a community website where people can ask coding questions using specific examples (e.g., [StackOverflow][SO], and [Biostars][BS]). There are also many, many wonderful websites and blogs with posts covering nearly any topic of which you could think (e.g., [codecademy][codecademy], [tutorials point][TP][R-bloggers][RB], [R Weekly][RW], and my own site [Myscape][Myscape]).
-
-
-### A Note on Documentation
-
-Writing comprehensive documentation about your code is a great way to convey important information about your software program. and give your code further context. A common form of documentation is a [**README**][docStrats] file in the directory of your code. This document is a description of the what, why, and how of the project for which the code was written.
-
-![README Documentation Practices](../fig/Readme_book_signifying_code_documentation.png){: width="800" }
-*[Image source][readmeDocs]*
-
-> ## Checklist
-> To help motivate writting documentation for your code, here are some questions you can ask yourself.
-> - What was your motivation?
-> - Why did you build this project?
-> - What problem does it solve?
-> - What did you learn?
-> - What makes your project stand out?
-{: .checklist}
-
-
+[carefulFormatting]: https://coreassistance.com/tips/2018/02/13/be-careful-with-code-formatting/
 [conventionsR]: http://adv-r.had.co.nz/Style.html
 [conventionsBASH]: https://google.github.io/styleguide/shellguide.html
 [fileConventions]: https://biblio.uottawa.ca/en/services/faculty/research-data-management/file-naming-and-organization-data
-[meaningfulComments]: https://www.stepsize.com/blog/the-engineers-guide-to-writing-code-comments
-[codecademy]: https://www.codecademy.com/catalog/language/r?g_network=g&g_device=c&g_adid=494035656878&g_keyword=&g_acctid=243-039-7011&g_adtype=search&g_adgroupid=122166635692&g_keywordid=dsa-1147291854134&g_campaignid=12144922488&g_campaign=US+DSA+-+Catalog&utm_id=t_dsa-1147291854134:ag_122166635692:cp_12144922488:n_g:d_c&utm_term=&utm_campaign=US%20DSA%3A%20Catalog&utm_source=google&utm_medium=paid-search&utm_content=494035656878&hsa_acc=2430397011&hsa_cam=12144922488&hsa_grp=122166635692&hsa_ad=494035656878&hsa_src=g&hsa_tgt=dsa-1147291854134&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQiAxoiQBhCRARIsAPsvo-w6GRi0Zpoyejk9YrXjYxjAD_FUNVF9WQ21g5HTA7pNGY72U7ng7B8aAtjoEALw_wcB
-[TP]: https://www.tutorialspoint.com/r/index.htm
-[SO]: https://stackoverflow.com/
-[BS]: https://www.biostars.org/
-[RB]: https://www.r-bloggers.com/
-[RW]: https://rweekly.org/
-[Myscape]: https://morphoscape.wordpress.com/category/tech/
-[readmeDocs]: https://blog.submain.com/code-documentation-the-complete-beginners-guide/
-[docStrats]: https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/
+[varExpand]: https://google.github.io/styleguide/shellguide.html#s5.6-variable-expansion
 
 {% include links.md %}
