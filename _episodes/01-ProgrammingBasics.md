@@ -1,12 +1,12 @@
 ---
 title: "Programming Basics"
-teaching: 20
+teaching: 10
 exercises: 10
 questions:
 - "What is the difference between programming and coding?"
 - "What are algorithms and how are they developed?"
 - "What is pseudocode and how can it be used?"
-- "What are the most commonly used programming commands?"
+- "What is the most common forms of logic used in programming?"
 objectives:
 - "Become familiar with the key concepts of programming, coding, algorithms, and pseudocode."
 - "Be able to design algorithms to accomplish basic everyday tasks."
@@ -21,9 +21,9 @@ keypoints:
 ---
 
 ## Introduction
-Some of the practical skills required of programmers include the ability to create algorithms, model problems, process data, and manage projects. Many of these same skills are also necessary for the analysis of complex or large biological data sets.
+Some of the practical skills required of programmers include the ability to create algorithms, model problems, process data, and manage projects. Many of these same skills are also necessary for anyone interested in the analysis of complex or large biological data sets.
 
-**INTRO SLIDESHOW**
+It is very common for beginning programmers and scientists to learn how to use software or pieces of code without really understanding how it was designed. Knowing how a software program was designed is not typically necessary if you want to use it to complete some simple data analysis. But if you want to have more control over the tools you are using and the way your analysis is performed, then you need to understand how the piece of software is being run by the computer.
 
 ## Programming vs Coding 
 Before we begin learning about how to write helpful programs for data analysis, it is important that we consider fundamental concepts and best practices in programming. While sometimes used interchangeably, [programming and coding][codingProgramming] have different definitions. 
@@ -83,7 +83,6 @@ Algorithms need to be represented by some form of language in order to be unders
 {: .discussion}
 
 As a first step before you begin developing an algorithm or writing any code, it is a good idea to write out the steps in a plain language. Let's look at an example of pseudocode for a simple algorithm to make tea:
-
 1. Remove a teabag from the package
 2. Put the teabag in a cup
 3. Boil some water
@@ -94,6 +93,7 @@ As a first step before you begin developing an algorithm or writing any code, it
 > ## Challenge - Pseudocode
 >
 > Write your own pseudocode for an algorithm to make buttered toast.
+>
 >> ## Solution
 >>
 >> 1. Take a slice of bread from the package
@@ -133,7 +133,7 @@ Note that an expression is a combination of logical operands and operators. In B
 >
 > **2.** What are some examples of compound boolean expressions?
 >
-> **Hint:** 
+> **Hint** 
 > Use a combination of the following operators to add complexity to your expressions!
 > - Comparison operators (>, <, =, >=, <=, !=)
 > - Boolean operators (AND, OR, NOT)
@@ -163,7 +163,7 @@ The most common type of control structures are [sequential statements][seqStatem
 
 The following is an example of a sequential statement with every-day actions.
 
-**Pseudocode:**
+**Pseudocode**
 1. Brush teeth 
 2. Wash face
 3. Comb hair
@@ -176,7 +176,6 @@ The following is an example of a sequential statement with every-day actions.
 >> ## Solution
 >>
 >> This is an example of pseudocode with the seuqence of actions to tie a shoe.
->>
 >> 1. Tie a basic knot
 >> 2. Make a loop with one of the laces
 >> 3. Use your other hand to wrap the other lace around the loop
@@ -192,7 +191,7 @@ Iterative statements allow you to execute the same piece of code a specified num
 
 There are many every-day actions that are done repetatively over a range of time, for example.
 
-**Pseudocode:**
+**Pseudocode**
 1. For each day of the year
 - Get up
 - Brush teeth
@@ -204,13 +203,12 @@ There are many every-day actions that are done repetatively over a range of time
 >
 > What is an example of pseudocode with a FOR loop iterative statment using every-day actions or items?
 >
-> **Hint:** 
+> **Hint** 
 > Iterative statements may contain, or be a part of sequential statements.
 >
 >> ## Solution
 >>
 >> This is an example of pseudocode wth a FOR loop to brush your teeth.
->>
 >> 1. Add toothpaste to toothbrush
 >> 2. For each tooth
 >> - Brush the outer surface
@@ -228,7 +226,7 @@ WHILE loops are another type of iterative statement that can be used as a contro
 
 We can also think of some every-day actions that are done repetatively until a certain point. For example, consider the process of braiding bair with a simple braid.
 
-**Pseudocode:**
+**Pseudocode**
 1. Divide the hair into three even sections 
 2. While enough hair remains to weave
 - Cross the left section over the middle section
@@ -239,13 +237,12 @@ We can also think of some every-day actions that are done repetatively until a c
 >
 > What is an example of pseudocode with a WHILE loop iterative statment using every-day actions or items?
 >
-> **Hint:** 
+> **Hint** 
 > Iterative statements may contain, or be a part of sequential statements or other iterative statements.
 >
 >> ## Solution
 >>
 >> This is an example of pseudocode with a WHILE loop to play dodgeball.
->>
 >> 1. Gather 3 or more people per team
 >> 2. Arrange 1 or more balls at the center of the court
 >> 3. Set a timer for 10 minutes
@@ -264,15 +261,15 @@ The most common and simple form of [conditional statements][conditionalStatement
 
 Situations requiring conditional descisions come up all the time in life, for example:
 
-- IF it rains, THEN the ground will be wet
-- IF I brush my teeth, THEN I won't get cavities
+- IF it rains, THEN the ground will be wet AND I will not water the plants
+- IF I brush my teeth, THEN I will NOT get cavities
 - IF my coffee = 100 degrees celsius AND I take a sip, THEN I will burn my tounge
 
 > ## Challenge - Conditional Statements 1
 >
 > What are some examples of simple IF... THEN conditional statments using every-day actions or items?
 >
-> **Hint:** 
+> **Hint** 
 > Use a combination of the following operators to add complexity to your statements!
 > - Comparison operators (>, <, =, >=, <=, !=)
 > - Boolean operators (AND, OR, NOT)
@@ -280,36 +277,30 @@ Situations requiring conditional descisions come up all the time in life, for ex
 >> ## Solution
 >>
 >> Here are some examples of every-day conditional statements.
->> 
 >> - IF you eat food, THEN you will NOT be hungry
 >> - IF it is my birthday AND I want to cry, THEN I will cry
 >> - IF my grade < 100 AND my grade > 90, THEN my grade is an A
 > {: .solution}
 {: .challenge}
 
-The next type of conditional statement adds a level of complexity with the IF... THEN... ELSE format. By adding the ELSE condition to an IF... THEN statement we are able to have alternative conclusions to our hypothesis.
+The next type of conditional statement adds another level of complexity with the IF... THEN... ELSE format. By adding the ELSE condition to an IF... THEN statement we are able to have alternative conclusions to our hypothesis.
 
 ![Conditional IF... THEN... ELSE Statements](../fig/if-else-statement-in-R-11.webp){: width="500" }
 *[Image source][ifElseInR]*
 
-The following is an example of an every-day moment that requires a decision with multiple conditional outcomes.
-
-**Pseudocode:**
-
+The following are examples of every-day moments that require decisions with multiple conditional outcomes.
+- IF cell phone battery does NOT have power, THEN plug in ELSE turn on
+- IF hair is dry, THEN put in braid ELSE dry with blowdryer
+- IF pizza is hot, THEN eat ELSE heat
 
 > ## Challenge - Conditional Statements 2
 >
-> 
+> What are some more examples of IF... THEN... ELSE conditional statments using every-day actions or items?
 >
-> **Hint:** 
+> **Hint** 
 > Use multiple ELSE conclusions and a combination of the following operators to add complexity to your statements!
 > - Comparison operators (>, <, =, >=, <=, !=)
 > - Boolean operators (AND, OR, NOT)
->
->> ## Solution
->>
->> 
-> {: .solution}
 {: .challenge}
 
 A more advanced type of conditional statement combines multiple IF... THEN... ELSE statements to make a compound statememnt with many alternative outcomes.
@@ -317,52 +308,24 @@ A more advanced type of conditional statement combines multiple IF... THEN... EL
 ![Conditional Compound Statements](../fig/if-else-statement-in-R-12.webp){: width="500" }
 *[Image source][ifElseInR]*
 
+The following is an example of an every-day moment that requires compound decisions with many alternative outcomes.
+
+**Pseudocode**
+IF it is snowing outside 
+- AND IF my car is buried, THEN order food for delivery
+- ELSE IF it is raining outside, THEN drive to pick up food
+- ELSE walk to pick up food 
+
 > ## Challenge - Conditional Statements 3
 >
-> 
+> What are some more examples of compound IF... THEN... ELSE conditional statments using every-day actions or items?
 >
->> ## Solution
->>
-> {: .solution}
+> **Hint** 
+> Use a combination of multiple IF... THEN... ELSE statements and a combination of the following operators to add complexity to your statements!
+> - Comparison operators (>, <, =, >=, <=, !=)
+> - Boolean operators (AND, OR, NOT)
 {: .challenge}
 
-### Advanced Concept
-
-An even more advanced concept, nested IF... THEN... ELSE statements can increase the flexability of your code by allowing you to specify more complex conditions.
-
-![Conditional Nested Statements](../fig/NESTED-IF-FLOW-CHART.webp){: width="500" }
-*[Image source][nestedIfElseInR]*
-
-> ## Advanced Challenge 1
-> 
-> If you are looking for an additional challenge, consider the following nested IF... THEN... ELSE statement:
->
->> ## Solution
->>
-> {: .solution}
-{: .challenge}
-
-> ## Advanced Challenge 2
->
-> What are the outputs of the following sequential and nested conditional statements?
->
->
->
-> What are the similarities and differences between these sequential and nested conditional statements?
->
-> 
->
->> ## Solution
->>
->> 
-> {: .solution}
-{: .challenge}
-
-### Final Concept Check
-In this lesson we discussed Boolean logic and explored the following control structures:
-- Sequential statmenetes
-- Iterative statements
-- Conditional (or selection) statements
 
 
 [codingProgramming]: https://www.goodcore.co.uk/blog/coding-vs-programming/
@@ -375,7 +338,6 @@ In this lesson we discussed Boolean logic and explored the following control str
 [loopsInR]: https://www.geeksforgeeks.org/loops-in-r-for-while-repeat/
 [ifThenInPython]: https://innovationyourself.com/conditional-statements-in-python/
 [ifElseInR]: https://www.datasciencemadesimple.com/if-else-condition-r/
-[nestedIfElseInR]: https://www.tutorialgateway.org/nested-if-else-in-r/
 
 {% include links.md %}
 

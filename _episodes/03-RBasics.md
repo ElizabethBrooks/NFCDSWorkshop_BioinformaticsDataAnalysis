@@ -1,7 +1,7 @@
 ---
 title: "R Basics"
-teaching: 15
-exercises: 30
+teaching: 10
+exercises: 20
 questions:
 - "What is the R programming language?"
 - "How do I write code in the R programming language?"
@@ -27,7 +27,6 @@ The R programming language is a great first language for anyone interested in us
 *[Image source][rMotivation]*
 
 Since the R programming language is [open source][openSource] it is not proprietary, and it can be modified and built upon by the public. Furthermore, [R][rLang] environment itself is an integrated suite of software for data manipulation, calculation, and graphics. The flexible R environment includes:
-
 - effective data handling and storage facility
 - operators for calculations on arrays, and matrices in particular
 - collections of intermediate tools for data analysis
@@ -53,6 +52,9 @@ Another place you can enter and run code is from the **source** component of RSt
 
 The [syntax of a programming language][rSyntax] defines the meaning of specific combinations of words and symbols. This is why we call programming coding. Each programming language uses different combinations of words and symbols to get the computer to follow the instructions specified in your code. 
 
+![What is Syntax?](../fig/Difference-Between-Morphology-and-Syntax.png){: width="500" }
+*[Image source][whatIsSyntax]*
+
 ### Variables & Data Types
 
 In the R programming language a combination of letters and symbols are used to give names to the data you are actively using in the memory of your computer system. These names are called [variables][rVars]. Variables are named storage that your programs can access and manipulate. These variables may be storing the values you specify directly in your code, or data stored in other files.
@@ -63,7 +65,7 @@ To set (assign) the value of a variable means that it is referring (pointing) to
 # here is an integer value
 4
 
-# here is a variable with an assigned integer value of 8
+# here is a variable with an assigned integer value of 4
 my_value <- 4
 ~~~
 {: .language-r}
@@ -83,7 +85,7 @@ To get you started, the following is an example of R code that adds two values o
 my_value <- 8
 my_value + my_value
 
-# addition using two different variables with the same assigned value
+# addition using two different variables with the different assigned values
 # and the result is stored in the variable named my_result
 my_value_1 <- 4
 my_value_2 <- 8
@@ -124,7 +126,7 @@ The type of data that is being stored and referred to by variables often needs t
 > {: .solution}
 {: .challenge}
 
-### R Functions and Function Definitions
+### R Functions - Printing, Vectors, Matrices, and Data Frames
 
 Functions in R are used to  The syntax of a function in R defines a block of code (statements) that can be used repeatedly and on demand (call) in a program.
 
@@ -135,7 +137,7 @@ Perhaps the most fundamental function in any programming language is one that al
 
 > ## Tip!
 >
-> The quickest and easiest way to find out more information about a function, what it is, and how to use it is with the **?** symbol in RStudio.
+> The quickest and easiest way to find out more information about a R function, including what it is and how to use it, is with the **?** symbol in RStudio.
 >
 > ~~~
 > # examine the documentation for the print function in R
@@ -156,7 +158,7 @@ print(my_var)
 ~~~
 {: .language-r}
 
-Vector, matrices, and data frames are slightly called R objects. Objects are a concept fundamental to [object oriented programming][OOP], and each obejct has specific attributes and behaviors. In the R programming language these are named storage that contains 1D and 2D collections of data. 
+*Vectors*, *matrices*, and *data frames* are called R objects. Objects are a concept fundamental to [object oriented programming][OOP], and each obejct has specific attributes and behaviors. In the R programming language these are named storage that contains 1D and 2D collections of data. 
 
 Each piece of data in a vector can be accessed by specifying the index of the piece of data, or element. The data in vectors must all be of the same data type. Furthermore, vectors can be assigned to variables in R.
 
@@ -276,7 +278,7 @@ my_mat[1,2]
 > {: .solution}
 {: .challenge}
 
-Similar to using the **matrix** function, we can use the **data.frame** function to create 2D data tables. Remeber that these are simply a collection of vectors that all have the same (equal) length. An interesting difference between data frames and matrices is that data frames can be a collection of vectors each with different data types, but matrices require all the row and column vectors of data to be the same type.
+Similar to using the **matrix** function, we can use the **data.frame** function to create 2D data tables. Remember that these are simply a collection of vectors that all have the same (equal) length. An interesting difference between data frames and matrices is that data frames can be a collection of vectors each with different data types, but matrices require all the row and column vectors of data to be the same type.
 
 ~~~
 # examine the documentation for the c function in R
@@ -292,7 +294,7 @@ seq_var <- seq(1, 4)
 ?data.frame
 
 # variable with a 2D data frame storing our three 1D vectors using implicit column naming
-df <- data.frame(char_Var, seq_var, logic_Var)
+df <- data.frame(char_Var, seq_var)
 
 # 2D data frame storing our three 1D vectors using explicit column naming
 data.frame(characters = char_var, integers = seq_var)
@@ -363,209 +365,6 @@ my_DF$ints
 >> {: .language-r}
 > {: .solution}
 {: .challenge}
-
-A powerful benefit of coding is the ability to create our own function definitions in R. This allows us to re-use a set of code statements arranged to perform a specific task. In R a function is created (defined) by using the keyword **function**. The basic syntax of an R function definition is as follows:
-
-~~~
-function_name <- function(arg_1, arg_2, ...) {
-   # function body 
-}
-~~~
-{: .language-r}
-
-> ## Coding Challenge
->
-> How can you view the documentation for the **function** R function in RStudio?
->
->> ## Solution
->> 
->> While typing in **?function** a message will pop up suggesting relevant R functions. While hovering your mouse over the **function** R function in the pop up, press F1.
->> 
->> ![RStudio function Help Tip](../fig/functionHelp.png){: width="500" }
-> {: .solution}
-{: .challenge}
-
-> ## Checklist
->
-> Note that a function in R has the following components:
-> - **function name** − the name of the function, which is stored in R environment as an R object with this name
-> - **arguments** − an optional placeholder for when a function is called (invoked). If a function has arguments and they do not have default values, you need to give (pass) values to the arguments
-> - **function body** − contains a collection of code statements that defines what the function does
-> - **return value** − the last expression evaluated in the function body
-{: .checklist}
-
-Let's practice making our own *user-defined* functions using **function**, which is a *built-in* R function. As a first step, we will make a couple functions with out arguments.
-
-~~~
-# definition of a function named my_function,
-# which assigns values to two variables and adds them
-my_function <- function() {
-	first_val <- 2
-	second_val <- 4
-	result <- first_val + second_val
-}
-
-# run the function by calling it by its name
-my_function()
-
-# function with an extra final line of code added to the function body
-my_better_function <- function() {
-	first_val <- 2
-	second_val <- 4
-	result <- first_val + second_val
-	result
-}
-
-# run the function by calling it by its name
-my_better_function()
-~~~
-{: .language-r}
-
-> ## Discussion
->
-> What is the difference between the definitions of the **my_function** and **my_better_function** functions, and why is this difference important?
-{: .discussion}
-
-Next, let's make some functions that require the input of arguments when they are run (callled).
-
-~~~
-# function to add two variables using arguments
-my_addition_function <- function(first_arg, second_arg) {
-	first_val <- first_arg
-	second_val <- second_arg
-	result <- first_val + second_val
-	result
-}
-
-# run the function by calling it by its name
-# THIS WILL RESULT IN AN ERROR
-my_addition_function()
-
-# run the function by passing the function call the necessary arguments
-my_addition_function(2, 4)
-
-# function to add two variables using default arguments
-my_default_addition_function <- function(first_arg = 0, second_arg = 0) {
-	first_val <- first_arg
-	second_val <- second_arg
-	result <- first_val + second_val
-	result
-}
-
-# run the function by calling it by its name
-my_default_addition_function()
-
-# run the function by passing the function call the necessary arguments
-my_default_addition_function(2, 4)
-~~~
-{: .language-r}
-
-> ## Coding Challenge
-> 
-> Now write and run your own function! Try using some of the other functions we have learned about so far in the body of the function you create. Remember that the last line of the function body is what gets returned when the function is called (run).
-{: .challenge}
-
-> ## Discussion
->
-> Because specific combinations of words and symbols have differfent meanings (syntax), the formatting of a function in R typically has several common features. What are some of these formatting features?
-> 
->> ## Solution
->> 
->> Some of the typical formatting features of a R function include:
->> - assignment operator **<-**
->> - **function** tag word
->> - parentheses
->> - curly braces
->> - commas between any arguments
->> - indentation of function body
->> 
-> {: .solution}
-{: .discussion}
-
-## How to Find and Fix Bugs
-
-While writting code it is very common to encounter errors that prevent your code from running (executing) in the expected manner. These errors are often the result of bugs, or flaws in your code.
-
-![How to Approach Debugging](../fig/debugging2.png){: width="500" }
-*[Image source][codingProblems]*
-
-The first step anytime you are trying to solve an error is to find the bug, which is the source of the error. To see an error in action, let's try to define a function that uses incompatible data types to perform a mathematical operation.
-
-~~~
-# definition of a funtion to add incompatible data type
-my_function <- function() {
-	first_val <- 2
-	second_val <- "4"
-	result <- first_val + second_val
-	result
-}
-
-# run the function by calling it by its name
-my_function()
-~~~
-{: .language-r}
-
-This results in the following message to be output (returned) to the screen (console):
-
-~~~
-Error in first_val + second_val : non-numeric argument to binary operator
-~~~
-{: .error}
-
-But from this message we cannot tell exactly which argument has the problem *non-numeric* value. Let's use the **print** function to find the exact source of the error.
-
-~~~
-# definition of a funtion to add incompatible data type
-my_function <- function(first_arg, second_arg) {
-	first_val <- first_arg
-	second_val <- second_arg
-	# added print statement to look at the value of each argument
-	print(first_val)
-	print(second_val)
-	result <- first_val + second_val
-	result
-}
-
-# run the function with an intentional error
-my_function(2, "4")
-~~~
-{: .language-r}
-
-So, it is important to take error meesages with a grain of salt. Instead of worrying or feeling overwhelemed when you recieve a bunch of incoherent error messages, tackle the problems one at a time and step-by-step. 
-
-> ## Coding Challenge
->
-> What is another function we can use to find the exact source of the error?
->
-> **Hint:** Use the internet to search "r view data type", for example.
->
->> ## Solution
->>
->> ~~~
->> # definition of a funtion to add incompatible data type
->> my_function <- function(first_arg, second_arg) {
->>	first_val <- first_arg
->>	second_val <- second_arg
->>	# added print statement to look at the value of each argument
->>	typeof(first_val)
->>	typeof(second_val)
->>	result <- first_val + second_val
->>	result
->> }
->>
->> # run the function with an intentional error
->> my_function(2, "4")
->> ~~~
->> {: .language-r}
-> {: .solution}
-{: .challenge}
-
-It is crucial to look for the first bug in your code when you are trying to find the source of an error. In general, you need to look for bugs starting at the top and work your way to the bottom of your code.
-
-> ## Discussion
->
-> Why is it so important to look for the earliest bug that appears in your code to fix first?
-{: .discussion}
 
 
 ## Logic & Control Statements in R
@@ -701,7 +500,7 @@ The most simple form of conditional statement is the IF... THEN form.
 > {: .solution}
 {: .challenge}
 
-The next type of conditional statement adds a level of complexity with the IF... THEN... ELSE format.
+The next type of conditional statement adds another level of complexity with the IF... THEN... ELSE format.
 
 > ## Coding Challenge - Conditional Statements Part 2
 >
@@ -770,7 +569,10 @@ A more advanced type of conditional statement combines multiple IF... THEN... EL
 
 ### Advanced Concept
 
-An even more advanced concept, nested IF... THEN... ELSE statements can increase the flexability of your code by allowing you to specify more complex conditions.
+An even more advanced concept, [nested IF... THEN... ELSE][nestedIfElseInR] statements can increase the flexability of your code by allowing you to specify more complex conditions.
+
+![Nested If... THEN... ELSE Statements](../fig/NESTED-IF-FLOW-CHART.webp){: width="500" }
+*[Image source][ifElseInR]*
 
 > ## Advanced Coding Challenge
 > 
@@ -809,6 +611,7 @@ An even more advanced concept, nested IF... THEN... ELSE statements can increase
 {: .challenge}
 
 
+[whatIsSyntax]: http://www.differencebetween.net/language/difference-between-morphology-and-syntax/
 [codingProblems]: https://www.geeksforgeeks.org/how-to-approach-a-coding-problem/
 [rFuncSyntax]: https://www.learnbyexample.org/r-functions/
 [rSyntax]: https://cs.lmu.edu/~ray/notes/syntax/

@@ -1,6 +1,6 @@
 ---
 title: "Programming Language Conventions"
-teaching: 20
+teaching: 10
 exercises: 10
 questions:
 - "Why is it important to leave notes in my code about what it does?"
@@ -13,7 +13,7 @@ keypoints:
 
 ## Programming Language Conventions 
 
-There is a set of guildlines for every programming language that informs how code should be formatted and the meaning behind specific combinations of words and symbols.
+There is a set of guildlines for every programming language that informs how code should be formatted and the meaning behind specific combinations of words and symbols. Recall that the exact details of the formatting conventions your need to follow depends on the programming language in which you are writting your code.
 
 > ## Discussion
 >
@@ -37,12 +37,15 @@ As we know, consistent file naming is important for properly managing your data.
 > - File names should be meaningful and end in an appropriate extension
 > - If files need to be run in sequence, prefix them with numbers
 >
-> Some common variable naming conventions:
+> Some common R variable naming conventions:
 > - Variable and function names should be lowercase
 > - Use an underscore or capatalization (camel case) to separate words within a name
 > - Generally, variable names should be nouns and function names should be verbs
 > - Strive for names that are concise and meaningful
 > - Where possible, avoid using names of existing functions and variables
+>
+> And some common BASH variable naming conventions:
+> - 
 {: .checklist}
 
 ### Formatting Conventions
@@ -105,12 +108,14 @@ Writing comprehensive documentation about your code is a great way to convey imp
 ![README Documentation Practices](../fig/Readme_book_signifying_code_documentation.png){: width="500" }
 *[Image source][readmeDocs]*
 
-To help motivate writting documentation for your code, here are some questions you can ask yourself.
-- What was your motivation?
-- Why did you build this project?
-- What problem does it solve?
-- What did you learn?
-- What makes your project stand out?
+> ## Checklist
+> To help motivate writting documentation for your code, here are some questions you can ask yourself.
+> - What was your motivation?
+> - Why did you build this project?
+> - What problem does it solve?
+> - What did you learn?
+> - What makes your project stand out?
+{: .checklist}
 
 [nameConventions]: http://adv-r.had.co.nz/Style.html
 [fileConventions]: https://biblio.uottawa.ca/en/services/faculty/research-data-management/file-naming-and-organization-data

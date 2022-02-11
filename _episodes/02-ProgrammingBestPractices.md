@@ -1,6 +1,6 @@
 ---
 title: "Programming Best Practices"
-teaching: 20
+teaching: 10
 exercises: 10
 questions:
 - "What are the benefits of writing programs?"
@@ -32,7 +32,6 @@ There are several things to keep in mind while working through your programming 
 > ## Checklist
 >
 > These are programming techniques that have been found to be helpful in a variety of research settings.
->
 > - Use programs to accomplish complex or repetative tasks
 > - Write programs that can be understood by others
 > - Take the time to plan how you will write a program
@@ -53,7 +52,6 @@ Throughout any programming undertaking we should be thinking about our problem s
 > ## Checklist
 >
 > These are steps you can take to approach solving a problem.
->
 > 1. Understand the problem
 > 2. Create a plan to solve the problem
 > 3. Implement the plan
@@ -65,7 +63,6 @@ The first step for approaching problem solving requires us to break down the pro
 > ## Checklist
 >
 > There are a few techniques we can use to help break down a problem before coding.
->
 > 1. Determine the inputs
 > 2. Determine the outputs
 > 3. Test a simple example
@@ -141,17 +138,26 @@ After devising a plan for a solution to a problem or task, it is a good idea to 
 
 Considering our simple solution to the previous challenge of writing an algorithm for getting dressed, there remain other ways that the algorithm may be written to be more comprehensive. For example, what if the intended user or audience is a young child? Then it may be necessary to further break down the steps of the algorithm to meet the needs of the user.
 
-For example, let's re-write step 4 of the simple algorithm from our solution to the above challenge. Instead of leaving the step to "Put on pants", we might break down the step as follows:
-1. Hold pants
-2. Open waistband
-3. Insert right leg into right leg hole of pants
-4. Insert left leg into left leg hole of pants
-5. Pull left pant leg up so the left foot comes through it
-6. Pull pants up from waitsband
+> ## Challenge
+>
+> For example, let's re-write step 4 of the simple algorithm from our solution to the above challenge. Try to break down this part of the task into as many steps as possible.
+>
+>> ## Solution
+>>
+>> Instead of leaving the step to "Put on pants", we might break down the step as follows:
+>> 1. Hold pants
+>> 2. Open waistband
+>> 3. Insert right leg into right leg hole of pants
+>> 4. Insert left leg into left leg hole of pants
+>> 5. Pull left pant leg up so the left foot comes through it
+>> 6. Pull pants up from waitsband
+> {: .solution}
+{: .challenge}
+
 
 ## The Importance of Formatting
 
-It is important to [format your code][carefulFormatting] in a manner that is conducive to reading. While some coding landuages have specific formatting requirements, formatting and commenting code is typically not actually needed for a program to work. Code should always be written in a consistent and logical format so that not only you, but others can read your program and quickly understand the purpose of your program. This is easy to achieve by setting and following a few simple rules.
+It is important to [format your code][carefulFormatting] in a manner that is conducive to reading. While some coding languages have specific formatting requirements, formatting and commenting code is typically not actually needed for a program to work. Code should always be written in a consistent and logical format so that not only you, but others can read your program and quickly understand the purpose of your program. This is easy to achieve by setting and following a few simple rules.
 
 ![Good Program Formatting](../fig/Be-Careful-with-Code-Formatting.png){: width="500" }
 *[Image source][carefulFormatting]*
