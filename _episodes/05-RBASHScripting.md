@@ -12,6 +12,7 @@ keypoints:
 
 So, we can use functions and evaluate mathematical expressions in BASH like we have done using the R programming language in RStudio. But our experience coding while using the BASH terrminal and command line so far has not been nearly as easy and streamlined as when using RStudio. For example, we have to write code in the restrictive and clunky terminal user interface. 
 
+
 ## R & BASH Scripting
 
 We can use BASH scripting to make the process of coding with BASH a bit more simple. BASH scripts are text files that have the **.sh** file extension. These are text files that you can use to save the lines of BASH code that you want the interpreter componenet of the computer operating system to execute (run).

@@ -21,6 +21,7 @@ keypoints:
 ## Introduction
 In this section we will learn about some of the common best practices in programming, which are easy to implememnt into your programming process. We will also explore approaches to solving problems and where to begin with designing algorithms.
 
+
 ## How to Be a Good Programmer
 The development of custom software programs has become increasingly necessary in biological research. Scientists are often required to create their own programs to analyze data and create publishable results. It is therefore very important that we consider [techniques for improving][goodProgrammer] the reproducibility and reliability of code. 
 
@@ -42,6 +43,7 @@ There are several things to keep in mind while working through your programming 
 {: .checklist}
 
 By implementing the above programming techniques, you will be better prepared to create sets of code to analyze complex biological data sets. 
+
 
 ## Ways to Approach Programming Tasks
 Throughout any programming undertaking we should be thinking about our problem solving thought process. This means that you will need to think critically about how you approach [solving coding problems][codingProblems] with programming. Often you will find that there are many routes to the same solution, and which route you take may depend on your intended user or available tools.

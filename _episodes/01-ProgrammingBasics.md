@@ -21,11 +21,14 @@ keypoints:
 ---
 
 ## Introduction
+
 Some of the practical skills required of programmers include the ability to create algorithms, model problems, process data, and manage projects. Many of these same skills are also necessary for anyone interested in the analysis of complex or large biological data sets.
 
 It is very common for beginning programmers and scientists to learn how to use software or pieces of code without really understanding how it was designed. Knowing how a software program was designed is not typically necessary if you want to use it to complete some simple data analysis. But if you want to have more control over the tools you are using and the way your analysis is performed, then you need to understand how the piece of software is being run by the computer.
 
+
 ## Programming vs Coding 
+
 Before we begin learning about how to write helpful programs for data analysis, it is important that we consider fundamental concepts and best practices in programming. While sometimes used interchangeably, [programming and coding][codingProgramming] have different definitions. 
 
 ![Programming vs Coding](../fig/coding-vs-programming.png.webp){: width="500" }
@@ -52,7 +55,9 @@ Based on your personal experiences, let's discuss our current understanding of t
 > {: .solution}
 {: .discussion}
 
+
 ## Pseudocode, Code, and Algorithms... Oh My!
+
 Although the differences seem small, there are important distinctions that we can make between the concepts of [pseudocode, code, and algorithms][algorithmPseudocode].
 
 ![Pseudocode vs Algorithms](../fig/Difference-Between-Algorithm-and-Pseudocode-Comparison-Summary.jpeg){: width="500" }
@@ -110,7 +115,9 @@ As a first step before you begin developing an algorithm or writing any code, it
 
 The primary advantage to using pseudocode in your programming process is that it improves the readability of your algorithms. By first writing algorithms for programs in a plain language, it allows you to break down a complex problem into smaller and more manageable pieces for coding. Furthermore, it gives you the chance to easily identify the most complex and potentially troublesome portions for code development.
 
+
 ## Programming with Logic
+
 A fundamental concept of computer programming, Boolean logic is the mathematical logic underlying Boolean algebra. In Boolean algebra expressions are evaluated to one of two values: TRUE or FALSE. Since an expression may only take on one of two values, Boolean logic is considered "two valued logic".
 
 ![Boolean Expressions](../fig/f5751338ef502ed0471c1bc92cddb564-image-1480345911160.png){: width="500" }

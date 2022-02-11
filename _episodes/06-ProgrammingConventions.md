@@ -22,6 +22,7 @@ There is a set of guildlines for every programming language that informs how cod
 > - capatalization (e.g., myValue)
 {: .discussion}
 
+
 ### Naming Conventions
 
 As we know, consistent file naming is important for properly managing your data. Using common [naming conventions][nameConventions] is also a good way to improve the readability of your code. This is important since it enables yourself and others to more readily understand the purpose of your code. 
@@ -47,6 +48,7 @@ As we know, consistent file naming is important for properly managing your data.
 > And some common BASH variable naming conventions:
 > - 
 {: .checklist}
+
 
 ### Formatting Conventions
 
@@ -81,6 +83,7 @@ We now know that specific combinations of words and symbols have differfent mean
 > - Use <-, not =, for assignment
 {: .checklist}
 
+
 ### Commenting & Helpful Services
 
 Small [meaningful comments][meaningfulComments] throughout your code can be a great way to leave yourself and others helpful notes about the purpose of your code. This is particularly important when approaching a new coding challenge, or when you need to take break. It is also helpful to leave frequent comments for code in programming languages you do not freuqently write in.
@@ -101,6 +104,7 @@ Creating comments for your code is most useful when you are describing *why* it 
 
 Looking at the documentation is one of the best ways to find out or recall exactly *what* a piece of code is doing. Another great way to learn the meaning of different pieces of code is through a community website where people can ask coding questions using specific examples (e.g., [StackOverflow][SO], and [Biostars][BS]). There are also many, many wonderful websites and blogs with posts covering nearly any topic of which you could think (e.g., [codecademy][codecademy], [tutorials point][TP][R-bloggers][RB], [R Weekly][RW], and my own site [Myscape][Myscape]).
 
+
 ### A Note on Documentation
 
 Writing comprehensive documentation about your code is a great way to convey important information about your software program. and give your code further context. A common form of documentation is a [**README**][docStrats] file in the directory of your code. This document is a description of the what, why, and how of the project for which the code was written.
@@ -116,6 +120,7 @@ Writing comprehensive documentation about your code is a great way to convey imp
 > - What did you learn?
 > - What makes your project stand out?
 {: .checklist}
+
 
 [nameConventions]: http://adv-r.had.co.nz/Style.html
 [fileConventions]: https://biblio.uottawa.ca/en/services/faculty/research-data-management/file-naming-and-organization-data
