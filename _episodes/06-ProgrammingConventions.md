@@ -25,34 +25,38 @@ There is a set of guildlines for every programming language that informs how cod
 
 ### Naming Conventions
 
-As we know, consistent file naming is important for properly managing your data. Using common [naming conventions][nameConventions] is also a good way to improve the readability of your code. This is important since it enables yourself and others to more readily understand the purpose of your code. 
+As we know, consistent file naming is important for properly managing your data. Some common file naming conventions:
+- file names should be meaningful and end in an appropriate extension
+- if files need to be run in sequence, prefix them with numbers
 
-![File Naming Conventions](../fig/laureperrier_filenaming.png){: width="500" }
+Using common naming conventions is also a good way to improve the readability of your code. This is important since it enables yourself and others to more readily understand the purpose of your code. 
+
+![File Naming Conventions](../fig/laureperrier_filenaming.png){: width="800" }
 *[Image source][fileConventions]*
 
 > ## Checklist
 >
 > One of the best practices of programming is to consistently follow a convention when naming files, variables, functions, and anything else.
 >
-> Some common file naming conventions:
-> - File names should be meaningful and end in an appropriate extension
-> - If files need to be run in sequence, prefix them with numbers
+> Some common [R naming conventions][conventionsR]:
+> - variable and function names should be lowercase
+> - use an underscore or capatalization (camel case) to separate words within a name
+> - generally, variable names should be nouns and function names should be verbs
+> - strive for names that are concise and meaningful
+> - where possible, avoid using names of existing functions and variables
 >
-> Some common R variable naming conventions:
-> - Variable and function names should be lowercase
-> - Use an underscore or capatalization (camel case) to separate words within a name
-> - Generally, variable names should be nouns and function names should be verbs
-> - Strive for names that are concise and meaningful
-> - Where possible, avoid using names of existing functions and variables
->
-> And some common BASH variable naming conventions:
-> - 
+> And some common [BASH naming conventions][conventionsBASH]:
+> - function names should be lower-case, with underscores to separate words
+> - anything exported to the environment (e.g., constants) should be capitalized, separated with underscores, declared at the top of the file
+> - source filenames should be lowercase, with underscores to separate words if desired
+> - you can use readonly or declare -r to ensure that specific variables are *read only*
+> - declare function-specific variables using the **local** keyword, and with the declaration and assignment on different lines
 {: .checklist}
 
 
 ### Formatting Conventions
 
-We now know that specific combinations of words and symbols have differfent meanings depending on the programming language. But did you also know that the formatting of the words and symbols is important as well?
+We now know that specific combinations of words and symbols have differfent meanings depending on the programming language. But did you also know that the formatting of the words and symbols can be important as well?
 
 > ## Checklist
 >
@@ -83,12 +87,22 @@ We now know that specific combinations of words and symbols have differfent mean
 > - Use <-, not =, for assignment
 {: .checklist}
 
+> ## Checklist
+>
+> The syntax of the BASH programming language has several components:
+>
+{: .checklist}
+
+> ## Discussion
+>
+>
+{: .discussion}
 
 ### Commenting & Helpful Services
 
 Small [meaningful comments][meaningfulComments] throughout your code can be a great way to leave yourself and others helpful notes about the purpose of your code. This is particularly important when approaching a new coding challenge, or when you need to take break. It is also helpful to leave frequent comments for code in programming languages you do not freuqently write in.
 
-![Tips for Creating Meaningful Comments](../fig/meaningfulComments.png){: width="500" }
+![Tips for Creating Meaningful Comments](../fig/meaningfulComments.png){: width="800" }
 *[Image source][meaningfulComments]*
 
 > ## Checklist
@@ -109,7 +123,7 @@ Looking at the documentation is one of the best ways to find out or recall exact
 
 Writing comprehensive documentation about your code is a great way to convey important information about your software program. and give your code further context. A common form of documentation is a [**README**][docStrats] file in the directory of your code. This document is a description of the what, why, and how of the project for which the code was written.
 
-![README Documentation Practices](../fig/Readme_book_signifying_code_documentation.png){: width="500" }
+![README Documentation Practices](../fig/Readme_book_signifying_code_documentation.png){: width="800" }
 *[Image source][readmeDocs]*
 
 > ## Checklist
@@ -122,7 +136,8 @@ Writing comprehensive documentation about your code is a great way to convey imp
 {: .checklist}
 
 
-[nameConventions]: http://adv-r.had.co.nz/Style.html
+[conventionsR]: http://adv-r.had.co.nz/Style.html
+[conventionsBASH]: https://google.github.io/styleguide/shellguide.html
 [fileConventions]: https://biblio.uottawa.ca/en/services/faculty/research-data-management/file-naming-and-organization-data
 [meaningfulComments]: https://www.stepsize.com/blog/the-engineers-guide-to-writing-code-comments
 [codecademy]: https://www.codecademy.com/catalog/language/r?g_network=g&g_device=c&g_adid=494035656878&g_keyword=&g_acctid=243-039-7011&g_adtype=search&g_adgroupid=122166635692&g_keywordid=dsa-1147291854134&g_campaignid=12144922488&g_campaign=US+DSA+-+Catalog&utm_id=t_dsa-1147291854134:ag_122166635692:cp_12144922488:n_g:d_c&utm_term=&utm_campaign=US%20DSA%3A%20Catalog&utm_source=google&utm_medium=paid-search&utm_content=494035656878&hsa_acc=2430397011&hsa_cam=12144922488&hsa_grp=122166635692&hsa_ad=494035656878&hsa_src=g&hsa_tgt=dsa-1147291854134&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQiAxoiQBhCRARIsAPsvo-w6GRi0Zpoyejk9YrXjYxjAD_FUNVF9WQ21g5HTA7pNGY72U7ng7B8aAtjoEALw_wcB

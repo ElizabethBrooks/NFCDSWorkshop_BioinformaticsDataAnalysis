@@ -31,7 +31,7 @@ It is very common for beginning programmers and scientists to learn how to use s
 
 Before we begin learning about how to write helpful programs for data analysis, it is important that we consider fundamental concepts and best practices in programming. While sometimes used interchangeably, [programming and coding][codingProgramming] have different definitions. 
 
-![Programming vs Coding](../fig/coding-vs-programming.png.webp){: width="500" }
+![Programming vs Coding](../fig/coding-vs-programming.png.webp){: width="800" }
 *[Image source][codingProgramming]*
 
 So although programming and coding have different meanings, they are related. The goal of coding is to create the code that acts as a set of computer instructions for a part of a programming project. The goal of programming on the other hand, is to produce programs that are complete and ready to use software products.
@@ -60,7 +60,7 @@ Based on your personal experiences, let's discuss our current understanding of t
 
 Although the differences seem small, there are important distinctions that we can make between the concepts of [pseudocode, code, and algorithms][algorithmPseudocode].
 
-![Pseudocode vs Algorithms](../fig/Difference-Between-Algorithm-and-Pseudocode-Comparison-Summary.jpeg){: width="500" }
+![Pseudocode vs Algorithms](../fig/Difference-Between-Algorithm-and-Pseudocode-Comparison-Summary.jpeg){: width="800" }
 *[Image source][algorithmPseudocode]*
 
 Everyone has some experienece with algorithms in their day-to-day life. For example, if you have ever cooked or done some task that requires you to follow instructions with a sequence of steps. 
@@ -120,7 +120,7 @@ The primary advantage to using pseudocode in your programming process is that it
 
 A fundamental concept of computer programming, Boolean logic is the mathematical logic underlying Boolean algebra. In Boolean algebra expressions are evaluated to one of two values: TRUE or FALSE. Since an expression may only take on one of two values, Boolean logic is considered "two valued logic".
 
-![Boolean Expressions](../fig/f5751338ef502ed0471c1bc92cddb564-image-1480345911160.png){: width="500" }
+![Boolean Expressions](../fig/f5751338ef502ed0471c1bc92cddb564-image-1480345911160.png){: width="800" }
 *[Image source][booleanExp]*
 
 Note that an expression is a combination of logical operands and operators. In Boolean logic the operands are statements that can be proven true or false, and the operators are the logical AND, OR and NOT.
@@ -163,7 +163,7 @@ The three primary types of [control structures][controlStructures] are:
 - Iterative statements control the number of times a block of code is executed
 - Conditional (or selection) statements control which blocks of code are executed, and which are not
 
-![Control Statements](../fig/lnpls008.gif){: width="500" }
+![Control Statements](../fig/lnpls008.gif){: width="800" }
 *[Image source][controlStructures]*
 
 The most common type of control structures are [sequential statements][seqStatements]. These are indicated by code statements written one after another, and are executed line by line. This means that the statements are performed in a top to bottom sequence according to how they are written.
@@ -193,7 +193,7 @@ The following is an example of a sequential statement with every-day actions.
 
 Iterative statements allow you to execute the same piece of code a specified number of times, or until a condition is reached. The most common [iterative statements][loopStatements] are defined using either FOR or WHILE loops. Let's start by looking at a flow diagram for a FOR loop, which dipicts the flow of information from inputs to outputs.
 
-![Iterative FOR Statements](../fig/for_flowdiagram.png){: width="500" }
+![Iterative FOR Statements](../fig/for_flowdiagram.png){: width="800" }
 *[Image source][loopsInR]*
 
 There are many every-day actions that are done repetatively over a range of time, for example.
@@ -228,7 +228,7 @@ There are many every-day actions that are done repetatively over a range of time
 
 WHILE loops are another type of iterative statement that can be used as a control structure in your code. This type of iterative statement will continue to execute a piece of code until a condition is reached.
 
-![Iterative WHILE Statements](../fig/while_flowdiagram.png){: width="500" }
+![Iterative WHILE Statements](../fig/while_flowdiagram.png){: width="800" }
 *[Image source][loopsInR]*
 
 We can also think of some every-day actions that are done repetatively until a certain point. For example, consider the process of braiding bair with a simple braid.
@@ -263,7 +263,7 @@ We can also think of some every-day actions that are done repetatively until a c
 
 The most common and simple form of [conditional statements][conditionalStatements] are of the IF... THEN form. These are statements that have two parts: hypothesis (if) and conclusion (then). The execution of the conclusion of the statement is conditional upon the state of the hypothesis, which must evaluate to TRUE.
 
-![Conditional IF... THEN Statements](../fig/scala_decision_making.jpeg){: width="500" }
+![Conditional IF... THEN Statements](../fig/scala_decision_making.jpeg){: width="800" }
 *[Image source][ifThenInPython]*
 
 Situations requiring conditional descisions come up all the time in life, for example:
@@ -292,7 +292,7 @@ Situations requiring conditional descisions come up all the time in life, for ex
 
 The next type of conditional statement adds another level of complexity with the IF... THEN... ELSE format. By adding the ELSE condition to an IF... THEN statement we are able to have alternative conclusions to our hypothesis.
 
-![Conditional IF... THEN... ELSE Statements](../fig/if-else-statement-in-R-11.webp){: width="500" }
+![Conditional IF... THEN... ELSE Statements](../fig/if-else-statement-in-R-11.webp){: width="800" }
 *[Image source][ifElseInR]*
 
 The following are examples of every-day moments that require decisions with multiple conditional outcomes.
@@ -312,7 +312,7 @@ The following are examples of every-day moments that require decisions with mult
 
 A more advanced type of conditional statement combines multiple IF... THEN... ELSE statements to make a compound statememnt with many alternative outcomes.
 
-![Conditional Compound Statements](../fig/if-else-statement-in-R-12.webp){: width="500" }
+![Conditional Compound Statements](../fig/if-else-statement-in-R-12.webp){: width="800" }
 *[Image source][ifElseInR]*
 
 The following is an example of an every-day moment that requires compound decisions with many alternative outcomes.

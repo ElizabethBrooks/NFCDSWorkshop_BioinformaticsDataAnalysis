@@ -25,7 +25,7 @@ In this section we will learn about some of the common best practices in program
 ## How to Be a Good Programmer
 The development of custom software programs has become increasingly necessary in biological research. Scientists are often required to create their own programs to analyze data and create publishable results. It is therefore very important that we consider [techniques for improving][goodProgrammer] the reproducibility and reliability of code. 
 
-![Good Programmer Characteristics](../fig/codingmindset-sm.png){: width="500" }
+![Good Programmer Characteristics](../fig/codingmindset-sm.png){: width="800" }
 *[Image source][goodProgrammer]*
 
 There are several things to keep in mind while working through your programming process. These are techniques that will help you to solve complex problems, while avoiding common pitfalls.
@@ -48,7 +48,7 @@ By implementing the above programming techniques, you will be better prepared to
 ## Ways to Approach Programming Tasks
 Throughout any programming undertaking we should be thinking about our problem solving thought process. This means that you will need to think critically about how you approach [solving coding problems][codingProblems] with programming. Often you will find that there are many routes to the same solution, and which route you take may depend on your intended user or available tools.
 
-![How to Approach Programming](../fig/How-to-Approach-a-Coding-Problem.png){: width="500" }
+![How to Approach Programming](../fig/How-to-Approach-a-Coding-Problem.png){: width="800" }
 *[Image source][codingProblems]*
 
 > ## Checklist
@@ -161,7 +161,7 @@ Considering our simple solution to the previous challenge of writing an algorith
 
 It is important to [format your code][carefulFormatting] in a manner that is conducive to reading. While some coding languages have specific formatting requirements, formatting and commenting code is typically not actually needed for a program to work. Code should always be written in a consistent and logical format so that not only you, but others can read your program and quickly understand the purpose of your program. This is easy to achieve by setting and following a few simple rules.
 
-![Good Program Formatting](../fig/Be-Careful-with-Code-Formatting.png){: width="500" }
+![Good Program Formatting](../fig/Be-Careful-with-Code-Formatting.png){: width="800" }
 *[Image source][carefulFormatting]*
 
 > ## Checklist

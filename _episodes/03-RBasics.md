@@ -23,7 +23,7 @@ keypoints:
 
 The R programming language is a great first language for anyone interested in using coding to help answer questions with data analysis, data visualization, and data science. R provides a wide variety of tools for statistical and graphical techniques, including; linear and nonlinear modelling, classical statistical tests, time-series analysis, classification, clustering, and more. A strength of the R language is the ease with which publication-quality plots can be generated, including mathematical symbols and formulae.
 
-![Why Learn the R Programming Language](../fig/Why-Learn-R-Reasons-to-learn-R.jpeg){: width="500" }
+![Why Learn the R Programming Language](../fig/Why-Learn-R-Reasons-to-learn-R.jpeg){: width="800" }
 *[Image source][rMotivation]*
 
 Since the R programming language is [open source][openSource] it is not proprietary, and it can be modified and built upon by the public. Furthermore, [R][rLang] environment itself is an integrated suite of software for data manipulation, calculation, and graphics. The flexible R environment includes:
@@ -42,7 +42,7 @@ Since the R programming language is [open source][openSource] it is not propriet
 
 RStudio is a very useful software program that allows you to work with the R programming language using a convienient user interface (UI). The interface for RStudio has four main components: source, console, environment/history, files/plots/packages/help.
 
-![Components of the RStudio User Interface](../fig/r-studio.png){: width="500" }
+![Components of the RStudio User Interface](../fig/r-studio.png){: width="800" }
 *[Image source][componentsRStudio]*
 
 The most important component of RStudio is the **console**, which is essentially the heart of RStudio. It is from here that you can run code, and it is here that R actually evaluates code.
@@ -54,7 +54,7 @@ Another place you can enter and run code is from the **source** component of RSt
 
 The [syntax of a programming language][rSyntax] defines the meaning of specific combinations of words and symbols. This is why we call programming coding. Each programming language uses different combinations of words and symbols to get the computer to follow the instructions specified in your code. 
 
-![What is Syntax?](../fig/Difference-Between-Morphology-and-Syntax.png){: width="500" }
+![What is Syntax?](../fig/Difference-Between-Morphology-and-Syntax.png){: width="800" }
 *[Image source][whatIsSyntax]*
 
 
@@ -103,7 +103,7 @@ my_result <- my_value_1 + my_value_2
 
 The type of data that is being stored and referred to by variables often needs to be specified. One reason for this is because some mathematical or computational operations cannot be performed on different data types.
 
-![R Variable and Data Types](../fig/Rvariablesdata.jpeg){: width="500" }
+![R Variable and Data Types](../fig/Rvariablesdata.jpeg){: width="800" }
 *[Image source][rVarsTypes]*
 
 > ## Coding Challenge
@@ -134,7 +134,7 @@ The type of data that is being stored and referred to by variables often needs t
 
 Functions in R are used to  The syntax of a function in R defines a block of code (statements) that can be used repeatedly and on demand (call) in a program.
 
-![Functions Syntax in R](../fig/r-function-syntax.png){: width="500" }
+![Functions Syntax in R](../fig/r-function-syntax.png){: width="800" }
 *[Image source][rFuncSyntax]*
 
 Perhaps the most fundamental function in any programming language is one that allows you to print data to the screen. This allows you to view the values assigned to variables and identify the source of problems in you code, for example.
@@ -570,7 +570,7 @@ A more advanced type of conditional statement combines multiple IF... THEN... EL
 
 An even more advanced concept, [nested IF... THEN... ELSE][nestedIfElseInR] statements can increase the flexability of your code by allowing you to specify more complex conditions.
 
-![Nested If... THEN... ELSE Statements](../fig/NESTED-IF-FLOW-CHART.webp){: width="500" }
+![Nested If... THEN... ELSE Statements](../fig/NESTED-IF-FLOW-CHART.webp){: width="800" }
 *[Image source][ifElseInR]*
 
 > ## Advanced Coding Challenge
