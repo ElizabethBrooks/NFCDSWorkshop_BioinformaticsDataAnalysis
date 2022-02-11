@@ -56,6 +56,14 @@ So, we can see that there are some important similarities and differences betwee
 > What are some other similarities and differences between BASH and RStudio?
 {: .discussion}
 
+> ## Tip!
+>
+> Notice that there is a *Terminal* tab in the RStudio window with the *Console* component. This allows you to run BASH commands in the RStudio interface, which also provides a convienient location to write and edit BASH script files.
+>
+> ![Terminal in RStudio](../fig/2020-07-09_11-27-shell.png){: width="800" }
+> *[Image source][terminalRStudio]*
+{: .callout}
+
 
 ## BASH Programming Language Syntax
 
@@ -341,6 +349,7 @@ So, we can use functions and evaluate mathematical expressions in BASH like we h
 [commandLangBASH]: https://www.linuxjournal.com/content/understanding-bash-elements-programming
 [programmingBASH]: https://www.linuxjournal.com/content/developing-console-applications-bash
 [componentsBASH]: https://dwmkerr.com/effective-shell-part-5-understanding-the-shell/
+[terminalRStudio]: https://support.rstudio.com/hc/en-us/articles/115010737148-Using-the-RStudio-Terminal-in-the-RStudio-IDE
 [linuxUnix]: https://www.geeksforgeeks.org/linux-vs-unix/
 [valueSettingSO]: https://stackoverflow.com/questions/1741820/what-are-the-differences-between-and-assignment-operators-in-r
 [dataTypesBASH]: https://tldp.org/LDP/abs/html/untyped.html
