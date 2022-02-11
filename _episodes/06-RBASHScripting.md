@@ -561,7 +561,7 @@ WHILE loops are another type of iterative statement that can be used as a contro
 > - print the value of x
 > - increment the value of x by 1
 >
->> ## Solution
+>> ## Hint!
 >>
 >> ~~~
 >> x <- 1
@@ -696,7 +696,7 @@ A more advanced type of conditional statement combines multiple IF... THEN... EL
 > 3. Else if x is greater than 6, then print "x is greater than 6"
 > 4. Else if x is less than 6, then print "x is less than 6"
 >
->> ## Solution
+>> ## Hint!
 >>
 >> ~~~
 >> x <- 7
