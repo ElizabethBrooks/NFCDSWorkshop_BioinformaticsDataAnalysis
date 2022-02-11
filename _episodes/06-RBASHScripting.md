@@ -474,7 +474,7 @@ The most common control structure of [sequential statements][seqStatements] are 
 
 > ## Coding Challenge - Sequential Statements
 >
-> Write R and BASH code for the following sequential statments:
+> Write BASH code for the following sequential statments:
 >
 > **Pseudocode**
 > 1. Assign x the value of 6
@@ -509,7 +509,7 @@ Iterative statements allow you to execute the same piece of code a specified num
 
 > ## Coding Challenge - Iterative Statements Part 1
 >
-> Write R and BASH code for the following FOR loop output:
+> Write BASH code for the following FOR loop output:
 >
 > **Pseudocode**
 > 1. For each value in the sequence 1, 2, 3, 4, 5 
@@ -553,7 +553,7 @@ WHILE loops are another type of iterative statement that can be used as a contro
 
 > ## Coding Challenge - Iterative Statements Part 2
 >
-> Write R and BASH code for the following WHILE loop output:
+> Write BASH code for the following WHILE loop output:
 >
 > **Pseudocode**
 > 1. Assign x the value of 1
@@ -601,7 +601,7 @@ The most simple form of conditional statement is the IF... THEN form.
 
 > ## Coding Challenge - Conditional Statements Part 1
 >
-> Write R and BASH code for the following IF... THEN conditional statement output:
+> Write BASH code for the following IF... THEN conditional statement output:
 >
 > **Pseudocode**
 > 1. Assign x the value of 7
@@ -642,7 +642,7 @@ The next type of conditional statement adds a level of complexity with the IF...
 
 > ## Coding Challenge - Conditional Statements Part 2
 >
-> Write R and BASH code for the following IF... THEN... ELSE conditional statement output:
+> Write BASH code for the following IF... THEN... ELSE conditional statement output:
 >
 > **Pseudocode**
 > 1. Assign x the value of 7
@@ -688,7 +688,7 @@ A more advanced type of conditional statement combines multiple IF... THEN... EL
 
 > ## Coding Challenge - Conditional Statements Part 3
 >
-> Write R and BASH code for the following compound IF... THEN... ELSE conditional statement output:
+> Write BASH code for the following compound IF... THEN... ELSE conditional statement output:
 >
 > **Pseudocode**
 > 1. Assign x the value of 7
@@ -744,7 +744,7 @@ An even more advanced concept, nested IF... THEN... ELSE statements can increase
 
 > ## Advanced Challenge
 > 
-> If you are looking for an additional challenge, write R and BASH code for the following nested IF... THEN... ELSE statement:
+> If you are looking for an additional challenge, write BASH code for the following nested IF... THEN... ELSE statement:
 >
 > **Pseudocode**
 > 1. Assign x the value of 4
