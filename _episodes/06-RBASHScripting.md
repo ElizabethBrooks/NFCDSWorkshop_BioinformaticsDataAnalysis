@@ -331,6 +331,7 @@ echo "After running my_function: var1: $var1, var2: $var2"
 > 
 > Now write and run your own *user-defined* R and BASH functions using scripts! Try using some of the other *built-in* functions we have learned about so far in the body of the function you create. 
 > 
+> **Hint**
 > Remember that in R the last line of the function body is what gets returned when the function is executed (run). Also, there are several formatting differences between R and BASH function defitions and calling (commands).
 {: .challenge}
 
@@ -378,7 +379,7 @@ echo "Hello from my_BASHScript_last.sh script!"
 
 While writting code it is very common to encounter errors that prevent your code from running (executing) in the expected manner. These errors are often the result of bugs, or flaws in your code.
 
-![How to Approach Debugging](../fig/debugging2.png){: width="800" }
+![How to Approach Debugging](../fig/debugging2.png){: width="500" }
 *[Image source][codingProblems]*
 
 The first step anytime you are trying to solve an error is to find the bug, which is the source of the error. To see an error in action, let's try to define a function that uses incompatible data types to perform a mathematical operation.
@@ -479,15 +480,16 @@ The most common control structure of [sequential statements][seqStatements] are 
 > 1. Assign x the value of 6
 > 2. Print the value of x
 > 
->> ## Solution
+>> ## Hint!
 >>
->> **Code Examples**
 >> ~~~
 >> x <- 6
 >> print(x)
 >> ~~~
 >> {: .language-r}
->>
+> {: .solution}
+>
+>> ## Solution
 >> ~~~
 >> #!/bin/bash
 >> 
@@ -514,15 +516,17 @@ Iterative statements allow you to execute the same piece of code a specified num
 > - Assign x the current value
 > - print the value of x
 >
->> ## Solution
+>> ## Hint!
 >>
->> **Code Examples**
 >> ~~~
 >> for (x in 1:5) {
 >>   print(x)
 >> }
 >> ~~~
 >> {: .language-r}
+> {: .solution}
+>
+>> ## Solution
 >>
 >> ~~~
 >> #!/bin/bash
@@ -559,7 +563,6 @@ WHILE loops are another type of iterative statement that can be used as a contro
 >
 >> ## Solution
 >>
-> **Code Examples**
 >> ~~~
 >> x <- 1
 >> while (x < 3) {
@@ -568,6 +571,9 @@ WHILE loops are another type of iterative statement that can be used as a contro
 >> }
 >> ~~~
 >> {: .language-r}
+> {: .solution}
+>
+>> ## Solution
 >>
 >> ~~~
 >> #!/bin/bash
@@ -601,9 +607,8 @@ The most simple form of conditional statement is the IF... THEN form.
 > 1. Assign x the value of 7
 > 2. If x is greater than 6, then print the value of x
 >
->> ## Solution
+>> ## Hint!
 >>
->> **Code Examples**
 >> ~~~
 >> x <- 7
 >> if (x > 6) {
@@ -611,6 +616,9 @@ The most simple form of conditional statement is the IF... THEN form.
 >> }
 >> ~~~
 >> {: .language-r}
+> {: .solution}
+>
+>> ## Solution
 >>
 >> ~~~
 >> #!/bin/bash
@@ -641,9 +649,8 @@ The next type of conditional statement adds a level of complexity with the IF...
 > 2. If x is less than 6, then print the value of x
 > 3. Else print "x is greater than or equal to 6"
 >
->> ## Solution
+>> ## Hint!
 >>
->> **Code Examples**
 >> ~~~
 >> x <- 7
 >> if (x < 6) {
@@ -653,6 +660,9 @@ The next type of conditional statement adds a level of complexity with the IF...
 >> }
 >> ~~~
 >> {: .language-r}
+> {: .solution}
+>
+>> ## Solution
 >>
 >> ~~~
 >> #!/bin/bash
@@ -688,7 +698,6 @@ A more advanced type of conditional statement combines multiple IF... THEN... EL
 >
 >> ## Solution
 >>
->> **Code Examples**
 >> ~~~
 >> x <- 7
 >> if (x = 6) {
@@ -700,6 +709,9 @@ A more advanced type of conditional statement combines multiple IF... THEN... EL
 >> }
 >> ~~~
 >> {: .language-r}
+> {: .solution}
+>
+>> ## Solution
 >>
 >> ~~~
 >> #!/bin/bash
@@ -741,9 +753,8 @@ An even more advanced concept, nested IF... THEN... ELSE statements can increase
 > - Else print "x is greater than 4"
 > 3. Else print "x is less than or equal to 4"
 >
->> ## Solution
+>> ## Hint!
 >>
->> **Code Examples**
 >> ~~~
 >> x <- 4
 >> if (x > 4) {
@@ -757,6 +768,9 @@ An even more advanced concept, nested IF... THEN... ELSE statements can increase
 >> }
 >> ~~~
 >> {: .language-r}
+> {: .solution}
+>
+>> ## Solution
 >>
 >> ~~~
 >> #!/bin/bash
@@ -783,6 +797,8 @@ An even more advanced concept, nested IF... THEN... ELSE statements can increase
 
 
 [interpreterComp]: https://www.geeksforgeeks.org/difference-between-assembler-and-interpreter/ 
+[popularEdits]: https://kinsta.com/blog/best-text-editors/
+[codingProblems]: https://www.geeksforgeeks.org/how-to-approach-a-coding-problem/
 [mathBASH]: https://www.shell-tips.com/bash/math-arithmetic-calculation/
 [scopeVars]: https://linuxize.com/post/bash-functions/
 [shebangBASH]: https://linuxize.com/post/bash-shebang/

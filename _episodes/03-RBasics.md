@@ -611,7 +611,6 @@ An even more advanced concept, [nested IF... THEN... ELSE][nestedIfElseInR] stat
 
 
 [whatIsSyntax]: http://www.differencebetween.net/language/difference-between-morphology-and-syntax/
-[codingProblems]: https://www.geeksforgeeks.org/how-to-approach-a-coding-problem/
 [rFuncSyntax]: https://www.learnbyexample.org/r-functions/
 [rSyntax]: https://cs.lmu.edu/~ray/notes/syntax/
 [rLang]: https://www.r-project.org/about.html

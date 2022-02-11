@@ -205,7 +205,7 @@ After searching the internet for "echo manual bash", we can see that this functi
 ~~~
 echo [options]... [String]...
 ~~~
-{: .language-r}
+{: .language-bash}
 
 > ## Checklist
 >
@@ -242,7 +242,7 @@ Recall that in the R programming language *vectors*, *matrices*, and *data frame
 > *[Image source][bashVsZsh]*
 {: .callout}
 
-Similar to R, we can easily create indexed 1D arrays ["on the fly"][onTheFly], without using an explicit function call (command). 
+Similar to R, we can easily create indexed [1D arrays using shorthand][onTheFly], without using an explicit function call (command). 
 
 ~~~
 # variable with an assigned value of a 1D vector object
@@ -269,7 +269,7 @@ my_array=(5 4 3 2 1); echo $my_array
 > Why do we need to use the **echo** BASH command to print the contents of a variable to the screen?
 {: .discussion}
 
-The simple "on the fly" form of creating arrays in BASH is very convienient. More powerfully, we can use the **declare** command to create both indexed and associative arrays in BASH.
+The simple shorthand form of creating arrays in BASH is very convienient. More powerfully, we can use the **declare** command to create both indexed and associative arrays in BASH.
 
 First, we will create an indexed array in both the R and BASH languages:
 
@@ -324,13 +324,15 @@ declare -A my_assoc_array; my_assoc_array[cat]="Meow"; my_assoc_array[dog]="Woof
 > {: .language-r}
 {: .discussion}
 
-> ## Tip!
+> ## Advanced Coding Challenge
 >
 > Note that it is not possible to create multi-dimensional arrays, such as 2D arrays in the BASH language. But it is possible to basically simulate a multi-dimensional collection of data using associative arrays, for example.
 >
 > ![Simulating 2D Arrays in BASH](../fig/simulate-Bash-array-of-arrays-05.png){: width="800" }
 > *[Image source][simArrays]*
-{: .callout}
+>
+> Try creating your own 2D array in the BASH command language!
+{: .challenge}
 
 So, we can use functions and evaluate mathematical expressions in BASH like we have done using the R programming language in RStudio. But our experience coding while using the BASH terrminal and command line so far has not been nearly as easy and streamlined as when using RStudio. For example, we have to write code in the restrictive and clunky terminal user interface. 
 
@@ -344,7 +346,6 @@ So, we can use functions and evaluate mathematical expressions in BASH like we h
 [dataTypesBASH]: https://tldp.org/LDP/abs/html/untyped.html
 [varsBASH]: https://ryanstutorials.net/bash-scripting-tutorial/bash-variables.php
 [formatVarsBASH]: https://linuxhint.com/bash-variable-name-rules-legal-illegal/
-[popularEdits]: https://kinsta.com/blog/best-text-editors/
 [syntaxLet]: https://ss64.com/bash/let.html
 [arraysBASH]: https://www.shell-tips.com/bash/arrays/
 [onTheFly]: https://linuxconfig.org/how-to-use-arrays-in-bash-script
