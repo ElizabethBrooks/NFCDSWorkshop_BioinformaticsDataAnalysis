@@ -59,7 +59,7 @@ The [syntax of a programming language][rSyntax] defines the meaning of specific 
 *[Image source][whatIsSyntax]*
 
 
-### Variables & Data Types
+### R Variables & Data Types
 
 In the R programming language a combination of letters and symbols are used to give names to the data you are actively using in the memory of your computer system. These names are called [variables][rVars]. Variables are named storage that your programs can access and manipulate. These variables may be storing the values you specify directly in your code, or data stored in other files.
 

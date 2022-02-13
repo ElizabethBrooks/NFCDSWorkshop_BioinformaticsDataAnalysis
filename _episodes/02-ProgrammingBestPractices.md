@@ -164,7 +164,7 @@ Considering our simple solution to the previous challenge of writing an algorith
 
 Small [meaningful comments][meaningfulComments] throughout your code can be a great way to leave yourself and others helpful notes about the purpose of your code. This is particularly important when approaching a new coding challenge, or when you need to take break. It is also helpful to leave frequent comments for code in programming languages you do not freuqently write in.
 
-![Tips for Creating Meaningful Comments](../fig/meaningfulComments.png){: width="800" }
+![Tips for Creating Meaningful Comments](../fig/meaningfulComments.png){: width="500" }
 *[Image source][meaningfulComments]*
 
 > ## Checklist
