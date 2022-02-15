@@ -40,7 +40,7 @@ No prior programming or data analysis experience is required.
 
 <!-- {% include syllabus.html %} -->
 
-#[preSurvey]: https://forms.gle/djkoZpj4GeeQA7yQ6
-#[postSurvey]: https://forms.gle/Gg4PMerdxVXULtEAA
+[preSurvey]: https://forms.gle/djkoZpj4GeeQA7yQ6
+[postSurvey]: https://forms.gle/Gg4PMerdxVXULtEAA
 
 {% include links.md %}
