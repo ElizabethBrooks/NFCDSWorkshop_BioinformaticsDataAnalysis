@@ -58,6 +58,14 @@ The [syntax of a programming language][rSyntax] defines the meaning of specific 
 ![What is Syntax?](../fig/Difference-Between-Morphology-and-Syntax.png){: width="500" }
 *[Image source][whatIsSyntax]*
 
+Here is a fun example from the show 30 Rock to illustrate the impartance of semantics:
+
+![Tracy Jordan's Party Invite](../fig/tracyInvite.jpeg){: width="500" }
+
+But, he actually wanted the invite to read:
+
+![What Tracy Jordan Wanted Said](../fig/tracySaid.gif){: width="500" }
+*[Image source][tracySaid]*
 
 ### R Variables & Data Types
 
@@ -627,6 +635,6 @@ An even more advanced concept, [nested IF... THEN... ELSE][nestedIfElseInR] stat
 [ifThenInPython]: https://innovationyourself.com/conditional-statements-in-python/
 [ifElseInR]: https://www.datasciencemadesimple.com/if-else-condition-r/
 [nestedIfElseInR]: https://www.tutorialgateway.org/nested-if-else-in-r/
-
+[tracySaid]: https://memes.getyarn.io/yarn-clip/c049a823-b593-4eec-877e-6dffcf978e9f/gif
 
 {% include links.md %}

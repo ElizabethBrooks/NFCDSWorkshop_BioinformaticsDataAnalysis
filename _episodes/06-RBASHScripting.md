@@ -21,7 +21,7 @@ keypoints:
 
 Not only can we save the code we have written by using BASH and R scripts, but we can also use scripting to create modular pieces of code for use in data analysis. This is particularly helpful for automating repetative tasks in data analysis pipelines. 
 
-It is also possible to have scripts recieve user inputs (arguments), just like the *built-in* and *user-defined* functions we have been using in R and BASH.
+It is also possible to have scripts recieve user inputs (arguments), just like the *built-in* and *user-defined* functions we have been using in R and BASH. This is great for making your code more generalizable and able to be run on a wider variety of data sets, or even allow users to specify file paths for data on different computer systems.
 
 
 ## R & BASH Scripting

@@ -9,7 +9,7 @@ permalink: index.html  # Is the only page that doesn't follow the pattern /:path
 {% comment %} This is a comment in Liquid {% endcomment %}
 
 ## Description
-This is the second lesson in a two-part workshop series [Programming and Data Analysis with R and BASH](https://elizabethbrooks.github.io/NFCDSWorkshop_BeginnersGuide_BioinformaticsDataAnalysis/), which is delivered as part of the NFCDS pedagogdy fellowship program. 
+This is the first lesson in a two-part workshop series [Programming and Data Analysis with R and BASH](https://elizabethbrooks.github.io/NFCDSWorkshop_BeginnersGuide_BioinformaticsDataAnalysis/), which is delivered as part of the NFCDS pedagogdy fellowship program. 
 
 Given the increasing amount of data being generated today, programmatic data analysis is an important skill for a wide range of fields. The R programming language and Unix/Linux command line can be powerful tools for analyzing data on their own. More powerfully, the huge variety of R and command line tools can be used together with scripting to create custom pipelines to analyze large or complex data sets.
 
@@ -40,7 +40,7 @@ No prior programming or data analysis experience is required.
 
 <!-- {% include syllabus.html %} -->
 
-[preSurvey]: https://forms.gle/djkoZpj4GeeQA7yQ6
-[postSurvey]: https://forms.gle/Gg4PMerdxVXULtEAA
+#[preSurvey]: https://forms.gle/djkoZpj4GeeQA7yQ6
+#[postSurvey]: https://forms.gle/Gg4PMerdxVXULtEAA
 
 {% include links.md %}
