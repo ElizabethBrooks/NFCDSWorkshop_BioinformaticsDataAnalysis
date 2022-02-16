@@ -40,14 +40,14 @@ Based on your personal experiences, let's discuss our current understanding of t
 
 > ## Discussion - Programming vs Coding
 >
-> With the person next to you, come up with a single sentence to describe programming.
+> Come up with a single sentence to describe programming.
 >
 >> ## Solution
 >>
 >> Programming is the process of creating instructions or set of related activities to achieve a task or goal.
 > {: .solution}
 >
-> With the person next to you, come up with a single sentence to describe coding.
+> Come up with a single sentence to describe coding.
 >
 >> ## Solution
 >>
