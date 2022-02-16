@@ -30,7 +30,9 @@ No prior programming or data analysis experience is required.
 >
 > 2. Each participant needs to have access to a computer with R, RStudio, and Unix/Linux or the Windows Ubuntu app. To get started, follow the directions in the [Setup](setup.html) tab. 
 >
-> 3. Please complete the [pre-workshop survey][preSurvey] before getting started with the workshop.
+> 3. Since this is an introductory workshop, we will be available 30 minutes prior to the workshop to walkthrough installing the necessary software. 
+>
+> 4. Please complete the [pre-workshop survey][preSurvey] before getting started with the workshop.
 {: .prereq}
 
 > ## Exit Ticket
