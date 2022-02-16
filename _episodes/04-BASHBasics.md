@@ -26,7 +26,7 @@ The [BASH command language][commandLangBASH] (Bourne Again SHell) is a programmi
 
 BASH is the default *shell* on most Linux operating system installations, and its wide distribution with [Linux and Unix][linuxUnix] systems makes it an important tool to know.
 
-![BASH Programming Language](../fig/Gnu-bash-logo_1.png){: width="800" }
+![BASH Programming Language](../fig/Gnu-bash-logo_1.png){: width="500" }
 *[Image source][programmingBASH]*
 
 The BASH language is used to communicate with the interpreter component of a computer system. The interpreter executes program code commands read from the standard input (e.g., terminal) or from a file. BASH script files end with the **.sh** extension, in contrast to the **.R** or **.r** extension of R scripts.

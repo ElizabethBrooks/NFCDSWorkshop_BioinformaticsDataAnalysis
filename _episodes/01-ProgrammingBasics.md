@@ -31,7 +31,7 @@ It is very common for beginning programmers and scientists to learn how to use s
 
 Before we begin learning about how to write helpful programs for data analysis, it is important that we consider fundamental concepts and best practices in programming. While sometimes used interchangeably, [programming and coding][codingProgramming] have different definitions. 
 
-![Programming vs Coding](../fig/coding-vs-programming.png.webp){: width="800" }
+![Programming vs Coding](../fig/coding-vs-programming.png.webp){: width="500" }
 *[Image source][codingProgramming]*
 
 So although programming and coding have different meanings, they are related. The goal of coding is to create the code that acts as a set of computer instructions for a part of a programming project. The goal of programming on the other hand, is to produce programs that are complete and ready to use software products.
