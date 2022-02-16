@@ -67,7 +67,7 @@ Everyone has some experienece with algorithms in their day-to-day life. For exam
 
 > ## Discussion - Algorithms
 >
-> With the person next to you, come up with a single sentence to describe algorithms.
+> Attempt to describe what algorithms are in a single sentence.
 >
 >> ## Solution
 >>
@@ -79,7 +79,7 @@ Algorithms need to be represented by some form of language in order to be unders
 
 > ## Discussion - Pseudocode
 >
-> With the person next to you, come up with a single sentence to describe pseudocode.
+> Attempt to describe what pseufocode is in a single sentence.
 >
 >> ## Solution
 >>
