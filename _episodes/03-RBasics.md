@@ -636,5 +636,6 @@ An even more advanced concept, [nested IF... THEN... ELSE][nestedIfElseInR] stat
 [ifElseInR]: https://www.datasciencemadesimple.com/if-else-condition-r/
 [nestedIfElseInR]: https://www.tutorialgateway.org/nested-if-else-in-r/
 [tracySaid]: https://memes.getyarn.io/yarn-clip/c049a823-b593-4eec-877e-6dffcf978e9f/gif
+[conditionalStatements]: https://code.org/curriculum/course2/12/Teacher
 
 {% include links.md %}

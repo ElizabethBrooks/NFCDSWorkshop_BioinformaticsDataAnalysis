@@ -802,6 +802,10 @@ An even more advanced concept, nested IF... THEN... ELSE statements can increase
 [mathBASH]: https://www.shell-tips.com/bash/math-arithmetic-calculation/
 [scopeVars]: https://linuxize.com/post/bash-functions/
 [shebangBASH]: https://linuxize.com/post/bash-shebang/
+[conditionalStatements]: https://code.org/curriculum/course2/12/Teacher
+[controlStructures]: https://docs.oracle.com/cd/B19306_01/appdev.102/b14261/controlstructures.htm
+[seqStatements]: http://status-twitter.blogspot.com/2013/11/uses-of-sequential-and-compound.html
+[loopStatements]: https://www.javatpoint.com/java-for-loop
 
 
 {% include links.md %}

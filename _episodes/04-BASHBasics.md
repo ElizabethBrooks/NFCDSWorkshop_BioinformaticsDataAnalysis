@@ -361,5 +361,7 @@ So, we can use functions and evaluate mathematical expressions in BASH like we h
 [macZsh]: https://medium.com/@harrison.miller13_28580/bash-vs-z-shell-a-tale-of-two-command-line-shells-c65bb66e4658
 [bashVsZsh]: https://www.kalilinux.in/2020/08/bash-zsh-in-kali.html
 [simArrays]: https://linuxhint.com/simulate-bash-array-of-arrays/ 
+[rSyntax]: https://cs.lmu.edu/~ray/notes/syntax/
+
 
 {% include links.md %}

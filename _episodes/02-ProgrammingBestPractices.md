@@ -185,7 +185,7 @@ Looking at the documentation is one of the best ways to find out or recall exact
 
 Writing comprehensive documentation about your code is a great way to convey important information about your software program. and give your code further context. A common form of documentation is a [**README**][docStrats] file in the directory of your code. This document is a description of the what, why, and how of the project for which the code was written.
 
-![README Documentation Practices](../fig/Readme_book_signifying_code_documentation.png){: width="800" }
+![README Documentation Practices](../fig/Readme_book_signifying_code_documentation.jpeg){: width="800" }
 *[Image source][readmeDocs]*
 
 > ## Checklist
@@ -198,6 +198,7 @@ Writing comprehensive documentation about your code is a great way to convey imp
 {: .checklist}
 
 
+[codingProblems]: https://www.geeksforgeeks.org/how-to-approach-a-coding-problem/ 
 [goodProgrammer]: https://mitcommlab.mit.edu/broad/commkit/coding-mindset/
 [meaningfulComments]: https://www.stepsize.com/blog/the-engineers-guide-to-writing-code-comments
 [codecademy]: https://www.codecademy.com/catalog/language/r?g_network=g&g_device=c&g_adid=494035656878&g_keyword=&g_acctid=243-039-7011&g_adtype=search&g_adgroupid=122166635692&g_keywordid=dsa-1147291854134&g_campaignid=12144922488&g_campaign=US+DSA+-+Catalog&utm_id=t_dsa-1147291854134:ag_122166635692:cp_12144922488:n_g:d_c&utm_term=&utm_campaign=US%20DSA%3A%20Catalog&utm_source=google&utm_medium=paid-search&utm_content=494035656878&hsa_acc=2430397011&hsa_cam=12144922488&hsa_grp=122166635692&hsa_ad=494035656878&hsa_src=g&hsa_tgt=dsa-1147291854134&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQiAxoiQBhCRARIsAPsvo-w6GRi0Zpoyejk9YrXjYxjAD_FUNVF9WQ21g5HTA7pNGY72U7ng7B8aAtjoEALw_wcB
