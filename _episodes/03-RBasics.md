@@ -307,7 +307,7 @@ seq_var <- seq(1, 4)
 ?data.frame
 
 # variable with a 2D data frame storing our three 1D vectors using implicit column naming
-df <- data.frame(char_Var, seq_var)
+df <- data.frame(char_var, seq_var)
 
 # 2D data frame storing our three 1D vectors using explicit column naming
 data.frame(characters = char_var, integers = seq_var)
@@ -588,10 +588,10 @@ An even more advanced concept, [nested IF... THEN... ELSE][nestedIfElseInR] stat
 >
 > **Pseudocode**
 > 1. Assign x the value of 8
-> 2. If x is less than 1, then check if x is equal to 'c'
-> - If x is equal to 6, then print "x is equal to 6"
-> - Else print "x is greater than 4"
-> 3. Else print "x is less than or equal to 4"
+> 2. If x is less than 1, then 
+> - check If x is equal to 'c', then print "x is less than 1 and equal to 'c'"
+> - Else print "x is less than 1"
+> 3. Else print "x is greater than 1"
 >
 >> ## Solution
 >>
