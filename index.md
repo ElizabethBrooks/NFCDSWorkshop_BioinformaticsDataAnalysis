@@ -24,7 +24,6 @@ No prior programming or data analysis experience is required.
 > ## Prerequisites
 >
 > 1. Participants should be comfortable with using a computer and basic statistical methods. Furthermore, participants should have:
-> - used a computer before
 > - limited to no experience with BASH
 > - limited to no experience with R
 >
