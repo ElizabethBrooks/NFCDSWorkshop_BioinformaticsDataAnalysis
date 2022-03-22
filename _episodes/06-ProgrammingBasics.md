@@ -1,5 +1,5 @@
 ---
-title: "Programming Basics"
+title: "Additional Lesson - Programming Basics"
 teaching: 10
 exercises: 10
 questions:

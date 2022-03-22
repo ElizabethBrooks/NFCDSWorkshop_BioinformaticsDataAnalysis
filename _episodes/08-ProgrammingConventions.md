@@ -1,5 +1,5 @@
 ---
-title: "Programming Language Conventions"
+title: "Additional Lesson - Programming Language Conventions"
 teaching: 15
 exercises: 5
 questions:
