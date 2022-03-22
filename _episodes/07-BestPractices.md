@@ -1,5 +1,5 @@
 ---
-title: "Supplemental - Programming Best Practices"
+title: "Supplemental - Best Practices"
 teaching: 0
 exercises: 0
 questions:

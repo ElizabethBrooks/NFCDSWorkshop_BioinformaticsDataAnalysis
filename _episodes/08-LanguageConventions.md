@@ -1,5 +1,5 @@
 ---
-title: "Supplemental - Programming Language Conventions"
+title: "Supplemental - Language Conventions"
 teaching: 0
 exercises: 0
 questions:

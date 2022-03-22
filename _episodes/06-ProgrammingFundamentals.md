@@ -1,5 +1,5 @@
 ---
-title: "Supplemental - Programming Basics"
+title: "Supplemental - Programming Fundamentals"
 teaching: 0
 exercises: 0
 questions:
