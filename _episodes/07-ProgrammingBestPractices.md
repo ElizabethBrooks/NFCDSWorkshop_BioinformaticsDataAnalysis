@@ -1,5 +1,5 @@
 ---
-title: "Additional Lesson - Programming Best Practices"
+title: "Supplemental - Programming Best Practices"
 teaching: 10
 exercises: 10
 questions:
