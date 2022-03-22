@@ -1,7 +1,7 @@
 ---
 title: "R Basics"
-teaching: 10
-exercises: 20
+teaching: 20
+exercises: 30
 questions:
 - "What is the R programming language?"
 - "How do I write code in the R programming language?"

@@ -1,7 +1,7 @@
 ---
 title: "R & BASH Scripting"
 teaching: 10
-exercises: 20
+exercises: 30
 questions:
 - "Why is scripting useful?"
 - "How can I write and run R and BASH scripts RStudio and terminal?"

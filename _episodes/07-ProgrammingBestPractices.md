@@ -1,7 +1,7 @@
 ---
 title: "Supplemental - Programming Best Practices"
-teaching: 10
-exercises: 10
+teaching: 0
+exercises: 0
 questions:
 - "What are the benefits of writing programs?"
 - "What are the most helpful programming techniques?"

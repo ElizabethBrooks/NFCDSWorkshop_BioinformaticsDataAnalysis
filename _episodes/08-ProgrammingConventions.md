@@ -1,7 +1,7 @@
 ---
 title: "Supplemental - Programming Language Conventions"
-teaching: 15
-exercises: 5
+teaching: 0
+exercises: 0
 questions:
 - "Why is it important to consistently format my code?"
 - "What are some common guidelines for writting R and BASH code?"
