@@ -32,12 +32,10 @@ The command line terminal available to Mac OS and Linux is a powerful tool and w
 > ~~~
 > dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 > ~~~
-> {: .language-r}
 - For Windows 10 systems updated to the Windows 10 May 2020 update and newer run the following in PowerShell as Administrator: 
 > ~~~
 > dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 > ~~~
-> {: .language-r}
 - Then restart your computer.
 - Now Ubuntu can be installed from the Microsoft Store:
   - Use the Start menu to launch the Microsoft Store application.
