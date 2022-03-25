@@ -589,7 +589,7 @@ An even more advanced concept, [nested IF... THEN... ELSE][nestedIfElseInR] stat
 > **Pseudocode**
 > 1. Assign x the value of 8
 > 2. If x is less than 1, then 
-> - check If x is equal to 'c', then print "x is less than 1 and equal to 'c'"
+> - AND then If x is equal to 'c', then print "x is less than 1 and equal to 'c'"
 > - Else print "x is less than 1"
 > 3. Else print "x is greater than 1"
 >

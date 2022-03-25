@@ -28,7 +28,7 @@ The command line terminal available to Mac OS and Linux is a powerful tool and w
 
 3. The Ubuntu terminal for Windows has many of the same features you’ll find using the terminal on Ubuntu for Linux, visit [https://ubuntu.com/tutorials/ubuntu-on-windows#1-overview](https://ubuntu.com/tutorials/ubuntu-on-windows#1-overview). Note that you will need a x86 PC running Windows 10.
 - As a first step the Windows Subsystem for Linux needs to be installed for your version of Windows 10.
-- For Windows 10 systems updated to the Windows 10 Fall Creators update released October 2017, run the following in PowerShell as Administrator: 
+- For Windows 10 systems updated to the Windows 10 Fall Creators update released October 2017, *run the following in PowerShell as Administrator*: 
 > ~~~
 > dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 > ~~~
