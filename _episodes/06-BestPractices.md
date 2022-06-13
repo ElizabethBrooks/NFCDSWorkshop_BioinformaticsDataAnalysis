@@ -56,7 +56,7 @@ Throughout any programming undertaking we should be thinking about our problem s
 
 > ## Checklist
 >
-> These are steps you can take to approach solving a problem.
+> These are steps you can take to approach solving a problem:
 > 1. Understand the problem
 > 2. Create a plan to solve the problem
 > 3. Implement the plan
@@ -67,7 +67,7 @@ The first step for approaching problem solving requires us to break down the pro
 
 > ## Checklist
 >
-> There are a few techniques we can use to help break down a problem before coding.
+> There are a few techniques we can use to help break down a problem before coding:
 > 1. Determine the inputs
 > 2. Determine the outputs
 > 3. Test a simple example

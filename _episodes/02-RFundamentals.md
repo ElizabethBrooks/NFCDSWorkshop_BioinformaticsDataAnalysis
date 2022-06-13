@@ -41,7 +41,11 @@ Since the R programming language is [open source][openSource] it is not propriet
 
 ### The Utility and Components of RStudio
 
-RStudio is a very useful software program that allows you to work with the R programming language using a convienient user interface (UI). The interface for RStudio has four main components: source, console, environment/history, files/plots/packages/help.
+RStudio is a very useful software program that allows you to work with the R programming language using a convienient user interface (UI). The interface for RStudio has four main components: 
+- source
+- console
+- environment/history
+- files/plots/packages/help
 
 ![Components of the RStudio User Interface](../fig/r-studio.png){: width="800" }
 *[Image source][componentsRStudio]*

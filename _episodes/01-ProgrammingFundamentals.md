@@ -141,6 +141,7 @@ Note that an expression is a combination of logical operands and operators. In B
 > **2.** What are some examples of compound boolean expressions?
 >
 > **Hint** 
+>
 > Use a combination of the following operators to add complexity to your expressions!
 > - Comparison operators (>, <, =, >=, <=, !=)
 > - Boolean operators (AND, OR, NOT)
@@ -210,8 +211,7 @@ There are many every-day actions that are done repetatively over a range of time
 >
 > What is an example of pseudocode with a FOR loop iterative statment using every-day actions or items?
 >
-> **Hint** 
-> Iterative statements may contain, or be a part of sequential statements.
+> **Hint:** Iterative statements may contain, or be a part of sequential statements.
 >
 >> ## Solution
 >>
@@ -244,8 +244,7 @@ We can also think of some every-day actions that are done repetatively until a c
 >
 > What is an example of pseudocode with a WHILE loop iterative statment using every-day actions or items?
 >
-> **Hint** 
-> Iterative statements may contain, or be a part of sequential statements or other iterative statements.
+> **Hint:** Iterative statements may contain, or be a part of sequential statements or other iterative statements.
 >
 >> ## Solution
 >>
@@ -277,6 +276,7 @@ Situations requiring conditional descisions come up all the time in life, for ex
 > What are some examples of simple IF... THEN conditional statments using every-day actions or items?
 >
 > **Hint** 
+>
 > Use a combination of the following operators to add complexity to your statements!
 > - Comparison operators (>, <, =, >=, <=, !=)
 > - Boolean operators (AND, OR, NOT)
@@ -305,6 +305,7 @@ The following are examples of every-day moments that require decisions with mult
 > What are some more examples of IF... THEN... ELSE conditional statments using every-day actions or items?
 >
 > **Hint** 
+>
 > Use multiple ELSE conclusions and a combination of the following operators to add complexity to your statements!
 > - Comparison operators (>, <, =, >=, <=, !=)
 > - Boolean operators (AND, OR, NOT)
@@ -318,6 +319,7 @@ A more advanced type of conditional statement combines multiple IF... THEN... EL
 The following is an example of an every-day moment that requires compound decisions with many alternative outcomes.
 
 **Pseudocode**
+
 IF it is snowing outside 
 - AND IF my car is buried, THEN order food for delivery
 - ELSE IF it is raining outside, THEN drive to pick up food
@@ -328,6 +330,7 @@ IF it is snowing outside
 > What are some more examples of compound IF... THEN... ELSE conditional statments using every-day actions or items?
 >
 > **Hint** 
+>
 > Use a combination of multiple IF... THEN... ELSE statements and a combination of the following operators to add complexity to your statements!
 > - Comparison operators (>, <, =, >=, <=, !=)
 > - Boolean operators (AND, OR, NOT)

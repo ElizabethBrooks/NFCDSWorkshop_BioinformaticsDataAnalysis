@@ -331,8 +331,7 @@ echo "After running my_function: var1: $var1, var2: $var2"
 > 
 > Now write and run your own *user-defined* R and BASH functions using scripts! Try using some of the other *built-in* functions we have learned about so far in the body of the function you create. 
 > 
-> **Hint**
-> Remember that in R the last line of the function body is what gets returned when the function is executed (run). Also, there are several formatting differences between R and BASH function defitions and calling (commands).
+> **Hint:** Remember that in R the last line of the function body is what gets returned when the function is executed (run). Also, there are several formatting differences between R and BASH function defitions and calling (commands).
 {: .challenge}
 
 
