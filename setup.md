@@ -28,22 +28,22 @@ The command line terminal available to Mac OS and Linux is a powerful tool and w
 
 3. The Ubuntu terminal for Windows has many of the same features you’ll find using the terminal on Ubuntu for Linux, visit [https://ubuntu.com/tutorials/ubuntu-on-windows#1-overview](https://ubuntu.com/tutorials/ubuntu-on-windows#1-overview). Note that you will need a x86 PC running Windows 10.
 - As a first step the Windows Subsystem for Linux needs to be installed for your version of Windows 10.
-- For Windows 10 systems updated to the Windows 10 Fall Creators update released October 2017, *run the following in PowerShell as Administrator*: 
+- For Windows 10 systems updated to the Windows 10 Fall Creators update released October 2017, *run the following in PowerShell as __Administrator__*: 
 > ~~~
 > dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
 > ~~~
-- For Windows 10 systems updated to the Windows 10 May 2020 update and newer run the following in PowerShell as Administrator: 
+- For Windows 10 systems updated to the Windows 10 May 2020 update and newer *run the following in PowerShell as __Administrator__*: 
 > ~~~
 > dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
 > ~~~
-- Then restart your computer.
+- Restart your computer.
 - Now Ubuntu can be installed from the Microsoft Store:
   - Use the Start menu to launch the Microsoft Store application.
   - Search for Ubuntu and select the first result, "Ubuntu", published by Canonical Group Limited.
   - Click on the Install button. Ubuntu will be downloaded and installed automatically. Progress will be reported within the Microsoft Store application.
 - Ubuntu can now be launched in the same way as any other Windows 10 application, such as searching for and selecting Ubuntu in the Start menu.
 
-**Note:** When launched for the first time, Ubuntu will inform you that it’s "Installing" and you’ll need to wait a few moments. Then enter a username and password specific to your Ubuntu installation, which don’t need to be the same as your Windows 10 credentials. With this step complete, you’ll find yourself at the Ubuntu bash command line.
+**Note:** When launched for the first time, Ubuntu will inform you that it’s "Installing" and you’ll need to wait a few moments. Then *enter a __username and password__ specific to your Ubuntu installation*, which don’t need to be the same as your Windows 10 credentials. With this step complete, you’ll find yourself at the Ubuntu bash command line.
 
 
 ## Mac OS
