@@ -1,6 +1,6 @@
 ---
 title: "R & BASH Scripting"
-teaching: 10
+teaching: 30
 exercises: 30
 questions:
 - "Why is scripting useful?"

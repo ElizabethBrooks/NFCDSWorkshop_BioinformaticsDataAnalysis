@@ -1,7 +1,7 @@
 ---
 title: "BASH Fundamentals"
-teaching: 20
-exercises: 30
+teaching: 30
+exercises: 15
 questions:
 - "What is the BASH command language?"
 - "How do I write code in the BASH command language?"

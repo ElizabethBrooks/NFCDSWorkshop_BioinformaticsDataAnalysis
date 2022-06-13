@@ -1,7 +1,7 @@
 ---
-title: "Supplemental - Programming Fundamentals"
-teaching: 0
-exercises: 0
+title: "Programming Fundamentals"
+teaching: 30
+exercises: 15
 questions:
 - "What is the difference between programming and coding?"
 - "What are algorithms and how are they developed?"
